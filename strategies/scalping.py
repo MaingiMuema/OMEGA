@@ -34,35 +34,32 @@ class ScalpingStrategy:
         self.open_trades = {}
         self.trade_history = []
         self.bb_period = 20
-        self.stop_loss_percentage = 0.015
+        self.stop_loss_percentage = 0.02
         self.mse_threshold = 15
-        self.take_profit_percentage = 0.025
+        self.take_profit_percentage = 0.03
         self.performance_tracker = PerformanceTracker()
         self.price_predictor = PricePredictor()
-        self.symbols = get_all_symbols()
-        self.timeframe = settings.TIMEFRAME
-        self.prediction_threshold = 0.005
+        self.symbols = get_all_symbols()  # Get all trading symbols
+        self.timeframe = settings.TIMEFRAME  # Set the timeframe from settings
+        self.prediction_threshold = 0.008  # 0.8% threshold, adjust as needed
         self.model_trained = False
-        self.training_interval = 24 * 60 * 60
+        self.training_interval = 24 * 60 * 60  # Train model every 24 hours
         self.last_model_training = 0
         self.model_file = 'price_predictor_model.joblib'
         self.last_trade_attempt = {}
-        self.cool_down_period = 30
-        self.max_trade_duration = 1800
-        self.historical_data_cache = TTLCache(maxsize=100, ttl=3600)
+        self.cool_down_period = 60 # 1 minutes
+        self.max_trade_duration = 3600  # 1 hour, adjust as needed
+        self.historical_data_cache = TTLCache(maxsize=100, ttl=3600)  # Cache for 1 hour
         self.open_trades: Dict[str, Trade] = {}
-        self.max_position_size = 0.03
+        self.max_position_size = 0.02
         self.trade_history: List[Trade] = []
-        self.trailing_stop_percentage = 0.008
+        self.max_trade_duration = 3600  # 1 hour
+        self.trailing_stop_percentage = 0.01  # 1%
         self.volatility_window = 20
-        self.risk_per_trade = 0.015
+        self.risk_per_trade = 0.01  # 1% of account balance
         self.bb = BollingerBands(window=20, num_std=2)
         self.last_model_training_time = 0
         self.last_pairs_update_time = 0
-        self.atr_period = 14
-        self.position_size_atr_multiplier = 2.0
-        self.max_position_size_usd = 5000  # Maximum position size in USD
-        self.min_position_size_usd = 100   # Minimum position size in USD
 
     async def warm_up(self):
         logger.info("Starting warm-up period...")
@@ -151,14 +148,12 @@ class ScalpingStrategy:
         if thresholds is None:
             logger.warning(f"Using default thresholds for {symbol}")
             thresholds = {
-                'macd_threshold': abs(macd_line.iloc[-1] - signal_line.iloc[-1]) * 0.2,  # More conservative
-                'bb_threshold': (bb_result['upper'] - bb_result['lower']) * 0.2,  # More conservative
-                'rsi_overbought': 70,  # More conservative
-                'rsi_oversold': 30,  # More conservative
-                'adx_threshold': 25,  # Stronger trend requirement
-                'volume_threshold': volume.rolling(window=20).mean().iloc[-1] * 2.0,  # Higher volume requirement
-                'min_signal_strength': 0.8,
-                'max_signal_strength': 1.2
+                'macd_threshold': abs(macd_line.iloc[-1] - signal_line.iloc[-1]) * 0.1,  # Dynamic threshold
+                'bb_threshold': (bb_result['upper'] - bb_result['lower']) * 0.15,  # Increased sensitivity
+                'rsi_overbought': 75,  # More conservative
+                'rsi_oversold': 25,  # More conservative
+                'adx_threshold': 20,  # Stronger trend requirement
+                'volume_threshold': volume.rolling(window=20).mean().iloc[-1] * 1.5  # Higher volume requirement
             }
         
         logger.info(f"Indicators for {symbol}: MACD={macd_line.iloc[-1]:.4f}, Signal={signal_line.iloc[-1]:.4f}, "
@@ -166,29 +161,29 @@ class ScalpingStrategy:
                     f"BB Lower={bb_result['lower']:.4f}, Price={current_price:.4f}, "
                     f"Prediction={price_change_prediction:.4f}, ADX={adx.iloc[-1]:.2f}")
 
-        # Enhanced buy conditions with stricter confirmation requirements
+        # Enhanced buy conditions with less strict requirements
         buy_conditions = [
             macd_line.iloc[-1] > signal_line.iloc[-1],  # MACD crossover
             macd_line.iloc[-1] - signal_line.iloc[-1] > thresholds['macd_threshold'],  # Strong MACD momentum
             current_price > bb_result['lower'],  # Price above lower band
             rsi.iloc[-1] < thresholds['rsi_overbought'],  # Not overbought
-            rsi.iloc[-1] > thresholds['rsi_oversold'],  # Not oversold
-            price_change_prediction > current_price * 1.005,  # Minimum 0.5% upside predicted
+            rsi.iloc[-1] > 30,  # Not extremely oversold
+            price_change_prediction > current_price,  # Any upside predicted
             adx.iloc[-1] > thresholds['adx_threshold'],  # Strong trend
-            volume.iloc[-1] > thresholds['volume_threshold'],  # High volume
+            volume.iloc[-1] > thresholds['volume_threshold'] * 0.8,  # Reduced volume requirement
             current_price > bb_result['middle']  # Price above middle band
         ]
 
-        # Enhanced sell conditions with stricter confirmation requirements
+        # Enhanced sell conditions with less strict requirements
         sell_conditions = [
             macd_line.iloc[-1] < signal_line.iloc[-1],  # MACD crossover
             signal_line.iloc[-1] - macd_line.iloc[-1] > thresholds['macd_threshold'],  # Strong MACD momentum
             current_price < bb_result['upper'],  # Price below upper band
             rsi.iloc[-1] > thresholds['rsi_oversold'],  # Not oversold
-            rsi.iloc[-1] < thresholds['rsi_overbought'],  # Not overbought
-            price_change_prediction < current_price * 0.995,  # Minimum 0.5% downside predicted
+            rsi.iloc[-1] < 70,  # Not extremely overbought
+            price_change_prediction < current_price,  # Any downside predicted
             adx.iloc[-1] > thresholds['adx_threshold'],  # Strong trend
-            volume.iloc[-1] > thresholds['volume_threshold'],  # High volume
+            volume.iloc[-1] > thresholds['volume_threshold'] * 0.8,  # Reduced volume requirement
             current_price < bb_result['middle']  # Price below middle band
         ]
 
@@ -196,22 +191,13 @@ class ScalpingStrategy:
         account_balance = self.exchange_client.get_account_balance()
         volatility = await self.calculate_volatility(symbol)
 
-        # Calculate signal strength with normalization
-        signal_strength = sum([
-            1 if macd_line.iloc[-1] > signal_line.iloc[-1] else -1,
-            1 if current_price > bb_result['middle'] else -1,
-            1 if rsi.iloc[-1] > 50 else -1,
-            1 if adx.iloc[-1] > thresholds['adx_threshold'] else -1,
-            1 if volume.iloc[-1] > thresholds['volume_threshold'] else -1
-        ]) / 5.0  # Normalize to [-1, 1] range
-        
-        signal_strength = (signal_strength + 1) / 2  # Convert to [0, 1] range
-        signal_strength = max(min(signal_strength, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
-
-        # Enhanced signal generation with stronger confirmation
-        if sum(buy_conditions) >= 7 and trend in ['up', 'strong_up']:  # At least 7 conditions must be met
+        # Enhanced signal generation with less strict confirmation
+        if sum(buy_conditions) >= 6 and trend in ['up', 'strong_up', 'neutral']:  # Reduced from 7 to 6 conditions
+            signal_strength = sum(buy_conditions) / len(buy_conditions)
             if trend == 'strong_up':
                 signal_strength *= 1.3  # Increased weight for strong trends
+            elif trend == 'up':
+                signal_strength *= 1.1  # Slight boost for uptrend
             
             position_size = await self.calculate_position_size(symbol, account_balance, volatility, current_price)
             
@@ -230,9 +216,12 @@ class ScalpingStrategy:
                 logger.warning(f"Buy signal generated for {symbol} but position size is invalid: {position_size}")
                 return None
                 
-        elif sum(sell_conditions) >= 7 and trend in ['down', 'strong_down']:  # At least 7 conditions must be met
+        elif sum(sell_conditions) >= 6 and trend in ['down', 'strong_down', 'neutral']:  # Reduced from 7 to 6 conditions
+            signal_strength = sum(sell_conditions) / len(sell_conditions)
             if trend == 'strong_down':
                 signal_strength *= 1.3  # Increased weight for strong trends
+            elif trend == 'down':
+                signal_strength *= 1.1  # Slight boost for downtrend
             
             position_size = await self.calculate_position_size(symbol, account_balance, volatility, current_price)
             
@@ -334,7 +323,7 @@ class ScalpingStrategy:
 
             # Calculate price-based scaling factor
             avg_price = historical_data['close'].mean()
-            price_scale = math.log10(max(avg_price, 1))
+            price_scale = math.log10(max(avg_price, 1))  # Logarithmic scaling
             
             # Calculate volatility-based scaling
             returns = np.log(historical_data['close'] / historical_data['close'].shift(1))
@@ -345,12 +334,12 @@ class ScalpingStrategy:
             volume_std = historical_data['volume'].std()
             
             return {
-                'macd_threshold': max(0.00005, volatility * price_scale * 0.05),
-                'bb_threshold': volatility * avg_price * 0.005,
-                'rsi_overbought': min(80 + volatility * 10, 85),
-                'rsi_oversold': max(20 - volatility * 10, 15),
-                'adx_threshold': 15 + volatility * 5,
-                'volume_threshold': avg_volume + volume_std * 0.3
+                'macd_threshold': max(0.0001, volatility * price_scale * 0.1),  # Scale with price and volatility
+                'bb_threshold': volatility * avg_price * 0.01,  # 1% of price, scaled by volatility
+                'rsi_overbought': min(75 + volatility * 10, 85),  # Dynamic RSI thresholds
+                'rsi_oversold': max(25 - volatility * 10, 15),
+                'adx_threshold': 20 + volatility * 10,  # Stronger trend requirement for volatile pairs
+                'volume_threshold': avg_volume + volume_std * 0.5  # More realistic volume threshold
             }
         except Exception as e:
             logger.error(f"Error calculating dynamic thresholds for {symbol}: {e}")
@@ -480,45 +469,139 @@ class ScalpingStrategy:
             
             # Get symbol information
             symbol_info = self.exchange_client.get_symbol_info(symbol)
-            lot_size_filter = next(filter(lambda x: x['filterType'] == 'LOT_SIZE', symbol_info['filters']))
-            min_notional_filter = next(filter(lambda x: x['filterType'] == 'MIN_NOTIONAL', symbol_info['filters']))
-            
-            # Extract lot size constraints
-            step_size = float(lot_size_filter['stepSize'])
-            min_qty = float(lot_size_filter['minQty'])
-            min_notional = float(min_notional_filter['minNotional'])
-            
-            # Calculate position size based on risk management
-            position_size = await self.calculate_position_size(symbol, account_balance, volatility, current_price)
-            
-            # Validate against minimum notional value
-            if position_size * current_price < min_notional:
-                logger.warning(f"Position size too small for {symbol}. Minimum notional value: {min_notional} USDT")
+            if not symbol_info:
+                logger.warning(f"Could not fetch symbol info for {symbol}")
                 return None
+
+            # Extract filters
+            lot_size_filter = next((f for f in symbol_info['filters'] if f['filterType'] == 'LOT_SIZE'), None)
+            min_notional_filter = next((f for f in symbol_info['filters'] if f['filterType'] == 'MIN_NOTIONAL'), None)
+            price_filter = next((f for f in symbol_info['filters'] if f['filterType'] == 'PRICE_FILTER'), None)
             
-            # Round down to the nearest valid quantity
+            if not all([lot_size_filter, min_notional_filter, price_filter]):
+                logger.warning(f"Required filters not found for {symbol}")
+                return None
+
+            min_qty = float(lot_size_filter['minQty'])
+            step_size = float(lot_size_filter['stepSize'])
+            min_notional = float(min_notional_filter['minNotional'])
+            tick_size = float(price_filter['tickSize'])
+
+            # Calculate base risk amount
+            risk_amount = account_balance * self.risk_per_trade
+            
+            # Scale risk based on price range
+            price_scale = math.log10(max(current_price, 1))
+            scaled_risk = risk_amount / price_scale
+            
+            # Calculate dynamic stop loss distance
+            atr = await self.calculate_atr(symbol, period=14, smoothing=5)
+            stop_loss_distance = max(atr * 1.5, current_price * 0.005)  # At least 0.5% or 1.5 ATR
+            
+            # Calculate base position size with price-scaled risk
+            position_size = scaled_risk / stop_loss_distance
+            
+            # Apply volatility adjustment
+            volatility_factor = 1 / (1 + volatility * 2)  # More conservative adjustment
+            position_size *= volatility_factor
+            
+            # Consider market liquidity with longer period
+            avg_volume = await self.get_average_volume(symbol, period=50)
+            max_trade_volume = avg_volume * 0.002  # Reduced to 0.2% of average volume
+            position_size = min(position_size, max_trade_volume)
+            
+            # Apply maximum position size limit
+            max_position_value = account_balance * self.max_position_size
+            position_size = min(position_size, max_position_value / current_price)
+            
+            # Round to valid step size
             precision = int(round(-math.log10(float(step_size))))
-            quantity = math.floor(position_size * (10 ** precision)) / (10 ** precision)
+            position_size = math.floor(position_size * (10 ** precision)) / (10 ** precision)
             
-            # Validate minimum quantity
-            if quantity < min_qty:
-                logger.warning(f"Quantity {quantity} below minimum {min_qty} for {symbol}")
+            # Ensure minimum notional value
+            if position_size * current_price < min_notional:
+                position_size = math.ceil(min_notional / current_price / step_size) * step_size
+            
+            # Final validation
+            if position_size < min_qty:
+                logger.warning(f"Position size {position_size} below minimum quantity {min_qty} for {symbol}")
                 return None
                 
+            if position_size * current_price < min_notional:
+                logger.warning(f"Position value {position_size * current_price:.8f} below minimum notional {min_notional} for {symbol}")
+                return 0.0
+            
+            # Calculate base risk amount with safety checks
+            if account_balance <= 0:
+                logger.warning(f"Invalid account balance: {account_balance}")
+                return 0.0
+                
+            if current_price <= 0:
+                logger.warning(f"Invalid current price for {symbol}: {current_price}")
+                return 0.0
+
+            risk_amount = account_balance * self.risk_per_trade
+            
+            # Scale risk based on price range with safety
+            price_scale = math.log10(max(current_price, 1.1))  # Ensure never 1 to avoid log10(1) = 0
+            scaled_risk = risk_amount / price_scale
+            
+            # Calculate dynamic stop loss distance with safety
+            atr = await self.calculate_atr(symbol, period=14, smoothing=5)
+            stop_loss_distance = max(atr * 1.5, current_price * 0.005, 0.00001)  # Ensure never 0
+            
+            # Calculate base position size with price-scaled risk
+            position_size = scaled_risk / stop_loss_distance
+            
+            # Apply volatility adjustment with safety
+            volatility = max(min(volatility, 0.95), 0)  # Cap volatility between 0 and 0.95
+            volatility_factor = 1 / (1 + volatility * 2)
+            position_size *= volatility_factor
+            
+            # Consider market liquidity with longer period
+            avg_volume = await self.get_average_volume(symbol, period=50)
+            if avg_volume > 0:  # Only apply if we have valid volume data
+                max_trade_volume = avg_volume * 0.002  # Reduced to 0.2% of average volume
+                position_size = min(position_size, max_trade_volume)
+            
+            # Apply maximum position size limit
+            max_position_value = account_balance * self.max_position_size
+            if current_price > 0:  # Prevent division by zero
+                position_size = min(position_size, max_position_value / current_price)
+            
+            # Round to valid step size
+            if step_size > 0:  # Prevent division by zero
+                precision = int(round(-math.log10(float(step_size))))
+                position_size = math.floor(position_size * (10 ** precision)) / (10 ** precision)
+            
+            # Ensure minimum notional value
+            if current_price > 0 and step_size > 0:  # Prevent division by zero
+                if position_size * current_price < min_notional:
+                    position_size = math.ceil(min_notional / current_price / step_size) * step_size
+            
+            # Final validation
+            if position_size < min_qty:
+                logger.warning(f"Position size {position_size} below minimum quantity {min_qty} for {symbol}")
+                return 0.0
+                
+            if position_size * current_price < min_notional:
+                logger.warning(f"Position value {position_size * current_price:.8f} below minimum notional {min_notional} for {symbol}")
+                return 0.0
+            
             # Execute the trade
             if signal == 'buy':
                 order = self.exchange_client.create_order(
                     symbol=symbol,
                     side='BUY',
                     type='MARKET',
-                    quantity=quantity
+                    quantity=position_size
                 )
             elif signal == 'sell':
                 order = self.exchange_client.create_order(
                     symbol=symbol,
                     side='SELL',
                     type='MARKET',
-                    quantity=quantity
+                    quantity=position_size
                 )
             else:
                 logger.warning(f"Invalid signal {signal} for {symbol}")
@@ -562,15 +645,6 @@ class ScalpingStrategy:
 
     async def calculate_position_size(self, symbol: str, account_balance: float, volatility: float, current_price: float) -> float:
         try:
-            # Validate inputs
-            if not all(isinstance(x, (int, float)) for x in [account_balance, volatility, current_price]):
-                logger.error(f"Invalid input types for position size calculation: balance={type(account_balance)}, volatility={type(volatility)}, price={type(current_price)}")
-                return 0.0
-                
-            if account_balance <= 0 or current_price <= 0:
-                logger.error(f"Invalid values for position size calculation: balance={account_balance}, price={current_price}")
-                return 0.0
-
             # Get symbol info for validation
             symbol_info = self.exchange_client.get_symbol_info(symbol)
             if not symbol_info:
@@ -580,53 +654,72 @@ class ScalpingStrategy:
             # Extract filters
             lot_size_filter = next((f for f in symbol_info['filters'] if f['filterType'] == 'LOT_SIZE'), None)
             min_notional_filter = next((f for f in symbol_info['filters'] if f['filterType'] == 'MIN_NOTIONAL'), None)
+            price_filter = next((f for f in symbol_info['filters'] if f['filterType'] == 'PRICE_FILTER'), None)
             
-            if not all([lot_size_filter, min_notional_filter]):
+            if not all([lot_size_filter, min_notional_filter, price_filter]):
                 logger.warning(f"Required filters not found for {symbol}")
                 return 0.0
 
             min_qty = float(lot_size_filter['minQty'])
             step_size = float(lot_size_filter['stepSize'])
             min_notional = float(min_notional_filter['minNotional'])
+            tick_size = float(price_filter['tickSize'])
 
-            # Calculate base position size (more aggressive)
-            risk_amount = account_balance * self.risk_per_trade * 1.5  # Increased risk amount
-            
-            # Calculate dynamic stop loss distance (tighter)
-            atr = await self.calculate_atr(symbol, period=14, smoothing=2)
-            stop_loss_distance = max(atr * 1.2, current_price * 0.004)  # Reduced from 1.5 ATR and 0.005
-            
-            # Calculate position size
-            position_size = risk_amount / max(stop_loss_distance, 0.00001)
-            
-            # Apply volatility adjustment (less conservative)
-            volatility_factor = 1 / (1 + max(volatility, 0.00001))
-            position_size *= volatility_factor * 1.2  # Increased by 20%
-            
-            # Consider market liquidity
-            avg_volume = await self.get_average_volume(symbol, period=30)  # Reduced from 50
-            max_trade_volume = avg_volume * 0.003  # Increased from 0.002
-            position_size = min(position_size, max_trade_volume)
-            
-            # Apply maximum position size limit
-            max_position_value = account_balance * self.max_position_size * 1.2  # Increased by 20%
-            position_size = min(position_size, max_position_value / max(current_price, 0.00001))
-            
-            # Round to valid step size
-            precision = int(round(-math.log10(float(step_size))))
-            position_size = math.floor(position_size * (10 ** precision)) / (10 ** precision)
-            
-            # Ensure minimum notional value
-            if position_size * current_price < min_notional:
-                position_size = math.ceil(min_notional / current_price / step_size) * step_size
-            
-            # Final validation with more lenient minimums
-            if position_size < min_qty * 0.8:  # 20% below minimum quantity
-                logger.warning(f"Position size {position_size} below adjusted minimum quantity {min_qty * 0.8} for {symbol}")
+            # Calculate base risk amount with safety checks
+            if account_balance <= 0:
+                logger.warning(f"Invalid account balance: {account_balance}")
                 return 0.0
                 
-            if position_size * current_price < min_notional * 0.8:  # 20% below minimum notional
-                logger.warning(f"Position value {position_size * current_price:.8f} below adjusted minimum notional {min_notional * 0.8} for {symbol}")
+            if current_price <= 0:
+                logger.warning(f"Invalid current price for {symbol}: {current_price}")
+                return 0.0
+
+            risk_amount = account_balance * self.risk_per_trade
+            
+            # Scale risk based on price range with safety
+            price_scale = math.log10(max(current_price, 1.1))  # Ensure never 1 to avoid log10(1) = 0
+            scaled_risk = risk_amount / price_scale
+            
+            # Calculate dynamic stop loss distance with safety
+            atr = await self.calculate_atr(symbol, period=14, smoothing=5)
+            stop_loss_distance = max(atr * 1.5, current_price * 0.005, 0.00001)  # Ensure never 0
+            
+            # Calculate base position size with price-scaled risk
+            position_size = scaled_risk / stop_loss_distance
+            
+            # Apply volatility adjustment with safety
+            volatility = max(min(volatility, 0.95), 0)  # Cap volatility between 0 and 0.95
+            volatility_factor = 1 / (1 + volatility * 2)
+            position_size *= volatility_factor
+            
+            # Consider market liquidity with longer period
+            avg_volume = await self.get_average_volume(symbol, period=50)
+            if avg_volume > 0:  # Only apply if we have valid volume data
+                max_trade_volume = avg_volume * 0.002  # Reduced to 0.2% of average volume
+                position_size = min(position_size, max_trade_volume)
+            
+            # Apply maximum position size limit
+            max_position_value = account_balance * self.max_position_size
+            if current_price > 0:  # Prevent division by zero
+                position_size = min(position_size, max_position_value / current_price)
+            
+            # Round to valid step size
+            if step_size > 0:  # Prevent division by zero
+                precision = int(round(-math.log10(float(step_size))))
+                position_size = math.floor(position_size * (10 ** precision)) / (10 ** precision)
+            
+            # Ensure minimum notional value
+            if current_price > 0 and step_size > 0:  # Prevent division by zero
+                if position_size * current_price < min_notional:
+                    position_size = math.ceil(min_notional / current_price / step_size) * step_size
+            
+            # Final validation
+            if position_size < min_qty:
+                logger.warning(f"Position size {position_size} below minimum quantity {min_qty} for {symbol}")
+                return 0.0
+                
+            if position_size * current_price < min_notional:
+                logger.warning(f"Position value {position_size * current_price:.8f} below minimum notional {min_notional} for {symbol}")
                 return 0.0
             
             return position_size
@@ -940,55 +1033,32 @@ class ScalpingStrategy:
         
         return capped_volatility
 
-    async def calculate_atr(self, symbol: str, timeframe: str = '1m') -> float:
-        """Calculate Average True Range"""
+    async def calculate_atr(self, symbol: str, period: int = 14, smoothing: int = 2) -> float:
+        """Calculate Average True Range (ATR) for a symbol."""
         try:
-            klines = await self.exchange.get_klines(symbol, timeframe, limit=self.atr_period + 1)
-            high = pd.Series([float(k[2]) for k in klines])
-            low = pd.Series([float(k[3]) for k in klines])
-            close = pd.Series([float(k[4]) for k in klines])
-            
-            tr1 = high - low
-            tr2 = abs(high - close.shift())
-            tr3 = abs(low - close.shift())
-            
-            tr = pd.concat([tr1, tr2, tr3], axis=1).max(axis=1)
-            atr = tr.rolling(window=self.atr_period).mean().iloc[-1]
-            return float(atr)
-        except Exception as e:
-            logger.error(f"Error calculating ATR for {symbol}: {str(e)}")
-            return 0.0
+            # Get historical data with extra periods for accurate calculation
+            historical_data = await self.market_data.get_historical_data(symbol, self.timeframe, limit=period * 2)
+            if historical_data is None or len(historical_data) < period:
+                logger.warning(f"Not enough data to calculate ATR for {symbol}")
+                return 0.0
 
-    async def calculate_position_size(self, symbol: str, signal_type: str, signal_strength: float) -> float:
-        """Calculate position size based on ATR and account balance"""
-        try:
-            balance = await self.exchange.get_balance()
-            current_price = await self.exchange.get_price(symbol)
-            atr = await self.calculate_atr(symbol)
+            high = historical_data['high']
+            low = historical_data['low']
+            close = historical_data['close']
+
+            # Calculate True Range
+            tr1 = abs(high - low)
+            tr2 = abs(high - close.shift(1))
+            tr3 = abs(low - close.shift(1))
+            tr = pd.concat([tr1, tr2, tr3], axis=1).max(axis=1)
+
+            # Calculate ATR using Wilder's smoothing
+            atr = tr.ewm(alpha=1/smoothing, min_periods=period).mean()
             
-            if atr == 0 or current_price == 0:
-                return 0.0
-                
-            # Risk per trade based on ATR and signal strength
-            risk_per_trade = min(balance * 0.01 * signal_strength, self.max_position_size_usd)  # Max 1% risk per trade
-            
-            # Position size based on ATR
-            position_size = risk_per_trade / (atr * self.position_size_atr_multiplier)
-            
-            # Convert to units of the asset
-            position_size_units = position_size / current_price
-            
-            # Apply minimum position size
-            if position_size < self.min_position_size_usd:
-                return 0.0
-                
-            # Apply maximum position size
-            position_size_units = min(position_size_units, self.max_position_size_usd / current_price)
-            
-            return position_size_units
-            
+            return float(atr.iloc[-1])
+
         except Exception as e:
-            logger.error(f"Error calculating position size for {symbol}: {str(e)}")
+            logger.error(f"Error calculating ATR for {symbol}: {e}")
             return 0.0
 
     async def get_average_volume(self, symbol: str, period: int = 50) -> float:

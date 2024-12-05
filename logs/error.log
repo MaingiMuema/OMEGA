@@ -22782,3 +22782,1198 @@ NameError: name 'logging' is not defined. Did you forget to import 'logging'
 2024-12-05 11:47:07,007 - exchange.binance_client - ERROR - Unexpected error converting CZK to USDT: APIError(code=-1121): Invalid symbol.
 2024-12-05 11:47:11,447 - exchange.binance_client - ERROR - Max retries reached for get_symbol_ticker: APIError(code=-1121): Invalid symbol.
 2024-12-05 11:47:11,450 - exchange.binance_client - ERROR - Unexpected error converting COP to USDT: APIError(code=-1121): Invalid symbol.
+2024-12-05 14:25:39,882 - exchange.binance_client - ERROR - Max retries reached for get_symbol_ticker: APIError(code=-1121): Invalid symbol.
+2024-12-05 14:25:39,889 - exchange.binance_client - ERROR - Error getting total balance in USDT: APIError(code=-1121): Invalid symbol.
+2024-12-05 14:25:39,895 - __main__ - ERROR - Error getting account balance: object float can't be used in 'await' expression
+2024-12-05 14:25:42,759 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 14:25:44,183 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 14:25:45,551 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 14:25:45,554 - exchange.binance_client - ERROR - Max retries reached for create_order: 'step_size'
+2024-12-05 14:25:45,555 - exchange.binance_client - ERROR - Unexpected error creating market order: 'step_size'
+2024-12-05 14:25:48,901 - exchange.binance_client - ERROR - Max retries reached for get_symbol_ticker: APIError(code=-1121): Invalid symbol.
+2024-12-05 14:25:48,905 - exchange.binance_client - ERROR - Unexpected error converting TRY to USDT: APIError(code=-1121): Invalid symbol.
+2024-12-05 14:25:52,172 - exchange.binance_client - ERROR - Max retries reached for get_symbol_ticker: APIError(code=-1121): Invalid symbol.
+2024-12-05 14:25:52,185 - exchange.binance_client - ERROR - Unexpected error converting ZAR to USDT: APIError(code=-1121): Invalid symbol.
+2024-12-05 14:25:55,467 - exchange.binance_client - ERROR - Max retries reached for get_symbol_ticker: APIError(code=-1121): Invalid symbol.
+2024-12-05 14:25:55,471 - exchange.binance_client - ERROR - Unexpected error converting IDRT to USDT: APIError(code=-1121): Invalid symbol.
+2024-12-05 14:25:58,725 - exchange.binance_client - ERROR - Max retries reached for get_symbol_ticker: APIError(code=-1121): Invalid symbol.
+2024-12-05 14:25:58,729 - exchange.binance_client - ERROR - Unexpected error converting UAH to USDT: APIError(code=-1121): Invalid symbol.
+2024-12-05 14:26:02,002 - exchange.binance_client - ERROR - Max retries reached for get_symbol_ticker: APIError(code=-1121): Invalid symbol.
+2024-12-05 14:26:02,006 - exchange.binance_client - ERROR - Unexpected error converting DAI to USDT: APIError(code=-1121): Invalid symbol.
+2024-12-05 14:26:05,994 - exchange.binance_client - ERROR - Max retries reached for get_symbol_ticker: APIError(code=-1121): Invalid symbol.
+2024-12-05 14:26:05,996 - exchange.binance_client - ERROR - Unexpected error converting BRL to USDT: APIError(code=-1121): Invalid symbol.
+2024-12-05 14:26:07,225 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 14:26:09,374 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 14:26:11,526 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 14:26:11,528 - exchange.binance_client - ERROR - Max retries reached for create_order: 'step_size'
+2024-12-05 14:26:11,530 - exchange.binance_client - ERROR - Unexpected error creating market order: 'step_size'
+2024-12-05 14:26:15,007 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 14:26:17,157 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 14:26:19,308 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 14:26:19,310 - exchange.binance_client - ERROR - Max retries reached for create_order: 'step_size'
+2024-12-05 14:26:19,313 - exchange.binance_client - ERROR - Unexpected error creating market order: 'step_size'
+2024-12-05 14:26:23,301 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 14:26:25,450 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 14:26:27,495 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 14:26:27,501 - exchange.binance_client - ERROR - Max retries reached for create_order: 'step_size'
+2024-12-05 14:26:27,504 - exchange.binance_client - ERROR - Unexpected error creating market order: 'step_size'
+2024-12-05 14:26:30,777 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 14:26:32,136 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 14:26:34,258 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 14:26:34,260 - exchange.binance_client - ERROR - Max retries reached for create_order: 'step_size'
+2024-12-05 14:26:34,262 - exchange.binance_client - ERROR - Unexpected error creating market order: 'step_size'
+2024-12-05 14:26:38,209 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 14:26:40,252 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 14:26:41,630 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 14:26:41,631 - exchange.binance_client - ERROR - Max retries reached for create_order: 'step_size'
+2024-12-05 14:26:41,634 - exchange.binance_client - ERROR - Unexpected error creating market order: 'step_size'
+2024-12-05 14:26:45,625 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 14:26:47,773 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 14:26:49,917 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 14:26:49,926 - exchange.binance_client - ERROR - Max retries reached for create_order: 'step_size'
+2024-12-05 14:26:49,930 - exchange.binance_client - ERROR - Unexpected error creating market order: 'step_size'
+2024-12-05 14:26:54,634 - exchange.binance_client - ERROR - Max retries reached for get_symbol_ticker: APIError(code=-1121): Invalid symbol.
+2024-12-05 14:26:54,638 - exchange.binance_client - ERROR - Unexpected error converting PLN to USDT: APIError(code=-1121): Invalid symbol.
+2024-12-05 14:26:58,628 - exchange.binance_client - ERROR - Max retries reached for get_symbol_ticker: APIError(code=-1121): Invalid symbol.
+2024-12-05 14:26:58,631 - exchange.binance_client - ERROR - Unexpected error converting RON to USDT: APIError(code=-1121): Invalid symbol.
+2024-12-05 14:27:03,338 - exchange.binance_client - ERROR - Max retries reached for get_symbol_ticker: APIError(code=-1121): Invalid symbol.
+2024-12-05 14:27:03,339 - exchange.binance_client - ERROR - Unexpected error converting ARS to USDT: APIError(code=-1121): Invalid symbol.
+2024-12-05 14:27:06,613 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 14:27:08,651 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 14:27:10,014 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 14:27:10,019 - exchange.binance_client - ERROR - Max retries reached for create_order: 'step_size'
+2024-12-05 14:27:10,022 - exchange.binance_client - ERROR - Unexpected error creating market order: 'step_size'
+2024-12-05 14:27:12,657 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 14:27:14,089 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 14:27:16,137 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 14:27:16,139 - exchange.binance_client - ERROR - Max retries reached for create_order: 'step_size'
+2024-12-05 14:27:16,142 - exchange.binance_client - ERROR - Unexpected error creating market order: 'step_size'
+2024-12-05 14:27:19,414 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 14:27:21,559 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 14:27:22,997 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 14:27:22,998 - exchange.binance_client - ERROR - Max retries reached for create_order: 'step_size'
+2024-12-05 14:27:23,000 - exchange.binance_client - ERROR - Unexpected error creating market order: 'step_size'
+2024-12-05 14:27:26,991 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 14:27:29,031 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 14:27:30,391 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 14:27:30,393 - exchange.binance_client - ERROR - Max retries reached for create_order: 'step_size'
+2024-12-05 14:27:30,396 - exchange.binance_client - ERROR - Unexpected error creating market order: 'step_size'
+2024-12-05 14:27:34,979 - exchange.binance_client - ERROR - Max retries reached for get_symbol_ticker: APIError(code=-1121): Invalid symbol.
+2024-12-05 14:27:34,982 - exchange.binance_client - ERROR - Unexpected error converting JPY to USDT: APIError(code=-1121): Invalid symbol.
+2024-12-05 14:27:40,189 - exchange.binance_client - ERROR - Max retries reached for get_symbol_ticker: APIError(code=-1121): Invalid symbol.
+2024-12-05 14:27:40,191 - exchange.binance_client - ERROR - Unexpected error converting MXN to USDT: APIError(code=-1121): Invalid symbol.
+2024-12-05 14:27:44,091 - exchange.binance_client - ERROR - Max retries reached for get_symbol_ticker: APIError(code=-1121): Invalid symbol.
+2024-12-05 14:27:44,095 - exchange.binance_client - ERROR - Unexpected error converting CZK to USDT: APIError(code=-1121): Invalid symbol.
+2024-12-05 14:27:48,800 - exchange.binance_client - ERROR - Max retries reached for get_symbol_ticker: APIError(code=-1121): Invalid symbol.
+2024-12-05 14:27:48,805 - exchange.binance_client - ERROR - Unexpected error converting COP to USDT: APIError(code=-1121): Invalid symbol.
+2024-12-05 14:30:27,238 - strategies.scalping - ERROR - Error processing BTCUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 97, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 209, in generate_trading_signal
+    signal_strength = max(min(signal_strength, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                               ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:30:31,867 - strategies.scalping - ERROR - Error processing ETHUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 97, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 209, in generate_trading_signal
+    signal_strength = max(min(signal_strength, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                               ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:30:35,337 - strategies.scalping - ERROR - Error processing XRPUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 97, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 209, in generate_trading_signal
+    signal_strength = max(min(signal_strength, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                               ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:30:38,228 - strategies.scalping - ERROR - Error processing BNBUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 97, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 209, in generate_trading_signal
+    signal_strength = max(min(signal_strength, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                               ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:30:40,747 - strategies.scalping - ERROR - Error processing ADAUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 97, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 209, in generate_trading_signal
+    signal_strength = max(min(signal_strength, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                               ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:30:43,341 - strategies.scalping - ERROR - Error processing LTCUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 97, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 209, in generate_trading_signal
+    signal_strength = max(min(signal_strength, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                               ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:30:46,175 - strategies.scalping - ERROR - Error processing SOLUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 97, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 209, in generate_trading_signal
+    signal_strength = max(min(signal_strength, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                               ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:30:49,036 - strategies.scalping - ERROR - Error processing ARBUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 97, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 209, in generate_trading_signal
+    signal_strength = max(min(signal_strength, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                               ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:30:51,583 - strategies.scalping - ERROR - Error processing DOTUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 97, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 209, in generate_trading_signal
+    signal_strength = max(min(signal_strength, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                               ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:30:53,985 - strategies.scalping - ERROR - Error processing NEARUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 97, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 209, in generate_trading_signal
+    signal_strength = max(min(signal_strength, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                               ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:30:56,452 - strategies.scalping - ERROR - Error processing TRXUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 97, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 209, in generate_trading_signal
+    signal_strength = max(min(signal_strength, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                               ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:30:58,908 - strategies.scalping - ERROR - Error processing AVAXUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 97, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 209, in generate_trading_signal
+    signal_strength = max(min(signal_strength, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                               ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:31:01,596 - strategies.scalping - ERROR - Error processing SUIUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 97, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 209, in generate_trading_signal
+    signal_strength = max(min(signal_strength, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                               ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:31:04,212 - strategies.scalping - ERROR - Error processing EOSUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 97, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 209, in generate_trading_signal
+    signal_strength = max(min(signal_strength, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                               ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:31:07,025 - strategies.scalping - ERROR - Error processing HBARUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 97, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 209, in generate_trading_signal
+    signal_strength = max(min(signal_strength, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                               ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:31:09,981 - strategies.scalping - ERROR - Error processing FDUSDUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 97, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 209, in generate_trading_signal
+    signal_strength = max(min(signal_strength, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                               ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:31:13,313 - strategies.scalping - ERROR - Error processing AAVEUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 97, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 209, in generate_trading_signal
+    signal_strength = max(min(signal_strength, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                               ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:31:16,130 - strategies.scalping - ERROR - Error processing POLUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 97, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 209, in generate_trading_signal
+    signal_strength = max(min(signal_strength, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                               ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:31:19,130 - strategies.scalping - ERROR - Error processing SANDUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 97, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 209, in generate_trading_signal
+    signal_strength = max(min(signal_strength, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                               ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:31:21,880 - strategies.scalping - ERROR - Error processing DYDXUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 97, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 209, in generate_trading_signal
+    signal_strength = max(min(signal_strength, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                               ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:32:48,870 - strategies.scalping - ERROR - Error processing BTCUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 97, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 209, in generate_trading_signal
+    signal_strength = max(min(signal_strength, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                               ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:32:51,524 - strategies.scalping - ERROR - Error processing XRPUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 97, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 209, in generate_trading_signal
+    signal_strength = max(min(signal_strength, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                               ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:32:54,191 - strategies.scalping - ERROR - Error processing ETHUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 97, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 209, in generate_trading_signal
+    signal_strength = max(min(signal_strength, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                               ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:42:14,562 - exchange.binance_client - ERROR - Max retries reached for get_symbol_ticker: APIError(code=-1121): Invalid symbol.
+2024-12-05 14:42:14,568 - exchange.binance_client - ERROR - Error getting total balance in USDT: APIError(code=-1121): Invalid symbol.
+2024-12-05 14:42:14,571 - __main__ - ERROR - Error getting account balance: object float can't be used in 'await' expression
+2024-12-05 14:42:17,400 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 14:42:18,859 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 14:42:20,295 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 14:42:20,300 - exchange.binance_client - ERROR - Max retries reached for create_order: 'step_size'
+2024-12-05 14:42:20,302 - exchange.binance_client - ERROR - Unexpected error creating market order: 'step_size'
+2024-12-05 14:42:23,567 - exchange.binance_client - ERROR - Max retries reached for get_symbol_ticker: APIError(code=-1121): Invalid symbol.
+2024-12-05 14:42:23,575 - exchange.binance_client - ERROR - Unexpected error converting TRY to USDT: APIError(code=-1121): Invalid symbol.
+2024-12-05 14:42:26,836 - exchange.binance_client - ERROR - Max retries reached for get_symbol_ticker: APIError(code=-1121): Invalid symbol.
+2024-12-05 14:42:26,839 - exchange.binance_client - ERROR - Unexpected error converting ZAR to USDT: APIError(code=-1121): Invalid symbol.
+2024-12-05 14:42:29,962 - exchange.binance_client - ERROR - Max retries reached for get_symbol_ticker: APIError(code=-1121): Invalid symbol.
+2024-12-05 14:42:29,966 - exchange.binance_client - ERROR - Unexpected error converting IDRT to USDT: APIError(code=-1121): Invalid symbol.
+2024-12-05 14:42:33,098 - exchange.binance_client - ERROR - Max retries reached for get_symbol_ticker: APIError(code=-1121): Invalid symbol.
+2024-12-05 14:42:33,100 - exchange.binance_client - ERROR - Unexpected error converting UAH to USDT: APIError(code=-1121): Invalid symbol.
+2024-12-05 14:42:36,299 - exchange.binance_client - ERROR - Max retries reached for get_symbol_ticker: APIError(code=-1121): Invalid symbol.
+2024-12-05 14:42:36,301 - exchange.binance_client - ERROR - Unexpected error converting DAI to USDT: APIError(code=-1121): Invalid symbol.
+2024-12-05 14:42:39,545 - exchange.binance_client - ERROR - Max retries reached for get_symbol_ticker: APIError(code=-1121): Invalid symbol.
+2024-12-05 14:42:39,551 - exchange.binance_client - ERROR - Unexpected error converting BRL to USDT: APIError(code=-1121): Invalid symbol.
+2024-12-05 14:42:40,778 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 14:42:42,211 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 14:42:43,641 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 14:42:43,647 - exchange.binance_client - ERROR - Max retries reached for create_order: 'step_size'
+2024-12-05 14:42:43,649 - exchange.binance_client - ERROR - Unexpected error creating market order: 'step_size'
+2024-12-05 14:42:45,691 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 14:42:47,124 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 14:42:48,558 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 14:42:48,563 - exchange.binance_client - ERROR - Max retries reached for create_order: 'step_size'
+2024-12-05 14:42:48,564 - exchange.binance_client - ERROR - Unexpected error creating market order: 'step_size'
+2024-12-05 14:42:49,788 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 14:42:51,220 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 14:42:52,651 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 14:42:52,657 - exchange.binance_client - ERROR - Max retries reached for create_order: 'step_size'
+2024-12-05 14:42:52,659 - exchange.binance_client - ERROR - Unexpected error creating market order: 'step_size'
+2024-12-05 14:42:53,875 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 14:42:55,316 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 14:42:56,751 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 14:42:56,754 - exchange.binance_client - ERROR - Max retries reached for create_order: 'step_size'
+2024-12-05 14:42:56,756 - exchange.binance_client - ERROR - Unexpected error creating market order: 'step_size'
+2024-12-05 14:42:57,975 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 14:42:59,408 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 14:43:00,846 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 14:43:00,848 - exchange.binance_client - ERROR - Max retries reached for create_order: 'step_size'
+2024-12-05 14:43:00,851 - exchange.binance_client - ERROR - Unexpected error creating market order: 'step_size'
+2024-12-05 14:43:02,178 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 14:43:03,610 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 14:43:05,044 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 14:43:05,047 - exchange.binance_client - ERROR - Max retries reached for create_order: 'step_size'
+2024-12-05 14:43:05,050 - exchange.binance_client - ERROR - Unexpected error creating market order: 'step_size'
+2024-12-05 14:43:08,322 - exchange.binance_client - ERROR - Max retries reached for get_symbol_ticker: APIError(code=-1121): Invalid symbol.
+2024-12-05 14:43:08,325 - exchange.binance_client - ERROR - Unexpected error converting PLN to USDT: APIError(code=-1121): Invalid symbol.
+2024-12-05 14:43:11,597 - exchange.binance_client - ERROR - Max retries reached for get_symbol_ticker: APIError(code=-1121): Invalid symbol.
+2024-12-05 14:43:11,601 - exchange.binance_client - ERROR - Unexpected error converting RON to USDT: APIError(code=-1121): Invalid symbol.
+2024-12-05 14:43:14,875 - exchange.binance_client - ERROR - Max retries reached for get_symbol_ticker: APIError(code=-1121): Invalid symbol.
+2024-12-05 14:43:14,878 - exchange.binance_client - ERROR - Unexpected error converting ARS to USDT: APIError(code=-1121): Invalid symbol.
+2024-12-05 14:43:16,101 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 14:43:17,537 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 14:43:18,967 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 14:43:18,975 - exchange.binance_client - ERROR - Max retries reached for create_order: 'step_size'
+2024-12-05 14:43:18,977 - exchange.binance_client - ERROR - Unexpected error creating market order: 'step_size'
+2024-12-05 14:43:20,301 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 14:43:21,736 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 14:43:23,165 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 14:43:23,168 - exchange.binance_client - ERROR - Max retries reached for create_order: 'step_size'
+2024-12-05 14:43:23,170 - exchange.binance_client - ERROR - Unexpected error creating market order: 'step_size'
+2024-12-05 14:43:24,501 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 14:43:26,651 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 14:43:28,084 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 14:43:28,087 - exchange.binance_client - ERROR - Max retries reached for create_order: 'step_size'
+2024-12-05 14:43:28,089 - exchange.binance_client - ERROR - Unexpected error creating market order: 'step_size'
+2024-12-05 14:43:30,057 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 14:43:31,462 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 14:43:32,896 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 14:43:32,899 - exchange.binance_client - ERROR - Max retries reached for create_order: 'step_size'
+2024-12-05 14:43:32,901 - exchange.binance_client - ERROR - Unexpected error creating market order: 'step_size'
+2024-12-05 14:43:36,023 - exchange.binance_client - ERROR - Max retries reached for get_symbol_ticker: APIError(code=-1121): Invalid symbol.
+2024-12-05 14:43:36,027 - exchange.binance_client - ERROR - Unexpected error converting JPY to USDT: APIError(code=-1121): Invalid symbol.
+2024-12-05 14:43:39,229 - exchange.binance_client - ERROR - Max retries reached for get_symbol_ticker: APIError(code=-1121): Invalid symbol.
+2024-12-05 14:43:39,231 - exchange.binance_client - ERROR - Unexpected error converting MXN to USDT: APIError(code=-1121): Invalid symbol.
+2024-12-05 14:43:43,033 - exchange.binance_client - ERROR - Max retries reached for get_symbol_ticker: APIError(code=-1121): Invalid symbol.
+2024-12-05 14:43:43,036 - exchange.binance_client - ERROR - Unexpected error converting CZK to USDT: APIError(code=-1121): Invalid symbol.
+2024-12-05 14:43:47,711 - exchange.binance_client - ERROR - Max retries reached for get_symbol_ticker: APIError(code=-1121): Invalid symbol.
+2024-12-05 14:43:47,715 - exchange.binance_client - ERROR - Unexpected error converting COP to USDT: APIError(code=-1121): Invalid symbol.
+2024-12-05 14:46:26,267 - strategies.scalping - ERROR - Error processing BTCUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 109, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 224, in generate_trading_signal
+    signal_strength = max(min(signal_strength * 1.2, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                                     ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:46:32,044 - strategies.scalping - ERROR - Error processing XRPUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 109, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 224, in generate_trading_signal
+    signal_strength = max(min(signal_strength * 1.2, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                                     ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:46:36,689 - strategies.scalping - ERROR - Error processing ETHUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 109, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 224, in generate_trading_signal
+    signal_strength = max(min(signal_strength * 1.2, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                                     ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:46:39,288 - strategies.scalping - ERROR - Error processing BNBUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 109, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 224, in generate_trading_signal
+    signal_strength = max(min(signal_strength * 1.2, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                                     ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:46:41,851 - strategies.scalping - ERROR - Error processing LTCUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 109, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 224, in generate_trading_signal
+    signal_strength = max(min(signal_strength * 1.2, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                                     ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:46:44,408 - strategies.scalping - ERROR - Error processing ADAUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 109, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 224, in generate_trading_signal
+    signal_strength = max(min(signal_strength * 1.2, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                                     ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:46:47,077 - strategies.scalping - ERROR - Error processing SOLUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 109, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 224, in generate_trading_signal
+    signal_strength = max(min(signal_strength * 1.2, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                                     ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:46:49,735 - strategies.scalping - ERROR - Error processing ARBUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 109, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 224, in generate_trading_signal
+    signal_strength = max(min(signal_strength * 1.2, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                                     ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:46:52,462 - strategies.scalping - ERROR - Error processing DOTUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 109, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 224, in generate_trading_signal
+    signal_strength = max(min(signal_strength * 1.2, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                                     ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:46:55,145 - strategies.scalping - ERROR - Error processing NEARUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 109, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 224, in generate_trading_signal
+    signal_strength = max(min(signal_strength * 1.2, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                                     ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:46:57,932 - strategies.scalping - ERROR - Error processing TRXUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 109, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 224, in generate_trading_signal
+    signal_strength = max(min(signal_strength * 1.2, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                                     ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:47:00,519 - strategies.scalping - ERROR - Error processing AVAXUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 109, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 224, in generate_trading_signal
+    signal_strength = max(min(signal_strength * 1.2, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                                     ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:47:03,251 - strategies.scalping - ERROR - Error processing SUIUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 109, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 224, in generate_trading_signal
+    signal_strength = max(min(signal_strength * 1.2, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                                     ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:47:06,000 - strategies.scalping - ERROR - Error processing EOSUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 109, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 224, in generate_trading_signal
+    signal_strength = max(min(signal_strength * 1.2, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                                     ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:47:08,808 - strategies.scalping - ERROR - Error processing HBARUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 109, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 224, in generate_trading_signal
+    signal_strength = max(min(signal_strength * 1.2, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                                     ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:47:11,952 - strategies.scalping - ERROR - Error processing FDUSDUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 109, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 224, in generate_trading_signal
+    signal_strength = max(min(signal_strength * 1.2, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                                     ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:47:15,208 - strategies.scalping - ERROR - Error processing AAVEUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 109, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 224, in generate_trading_signal
+    signal_strength = max(min(signal_strength * 1.2, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                                     ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:47:17,825 - strategies.scalping - ERROR - Error processing POLUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 109, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 224, in generate_trading_signal
+    signal_strength = max(min(signal_strength * 1.2, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                                     ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:47:20,548 - strategies.scalping - ERROR - Error processing SANDUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 109, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 224, in generate_trading_signal
+    signal_strength = max(min(signal_strength * 1.2, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                                     ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:47:23,101 - strategies.scalping - ERROR - Error processing DYDXUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 109, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 224, in generate_trading_signal
+    signal_strength = max(min(signal_strength * 1.2, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                                     ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:48:46,844 - strategies.scalping - ERROR - Error processing BTCUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 109, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 224, in generate_trading_signal
+    signal_strength = max(min(signal_strength * 1.2, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                                     ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:48:49,424 - strategies.scalping - ERROR - Error processing XRPUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 109, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 224, in generate_trading_signal
+    signal_strength = max(min(signal_strength * 1.2, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                                     ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:48:52,008 - strategies.scalping - ERROR - Error processing ETHUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 109, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 224, in generate_trading_signal
+    signal_strength = max(min(signal_strength * 1.2, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                                     ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:48:54,649 - strategies.scalping - ERROR - Error processing BNBUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 109, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 224, in generate_trading_signal
+    signal_strength = max(min(signal_strength * 1.2, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                                     ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:48:57,163 - strategies.scalping - ERROR - Error processing LTCUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 109, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 224, in generate_trading_signal
+    signal_strength = max(min(signal_strength * 1.2, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                                     ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:48:59,731 - strategies.scalping - ERROR - Error processing ADAUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 109, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 224, in generate_trading_signal
+    signal_strength = max(min(signal_strength * 1.2, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                                     ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:49:02,164 - strategies.scalping - ERROR - Error processing SOLUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 109, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 224, in generate_trading_signal
+    signal_strength = max(min(signal_strength * 1.2, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                                     ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:49:04,700 - strategies.scalping - ERROR - Error processing ARBUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 109, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 224, in generate_trading_signal
+    signal_strength = max(min(signal_strength * 1.2, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                                     ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:49:07,152 - strategies.scalping - ERROR - Error processing DOTUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 109, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 224, in generate_trading_signal
+    signal_strength = max(min(signal_strength * 1.2, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                                     ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:49:09,767 - strategies.scalping - ERROR - Error processing NEARUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 109, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 224, in generate_trading_signal
+    signal_strength = max(min(signal_strength * 1.2, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                                     ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:49:12,380 - strategies.scalping - ERROR - Error processing TRXUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 109, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 224, in generate_trading_signal
+    signal_strength = max(min(signal_strength * 1.2, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                                     ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:49:15,066 - strategies.scalping - ERROR - Error processing AVAXUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 109, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 224, in generate_trading_signal
+    signal_strength = max(min(signal_strength * 1.2, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                                     ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:49:17,690 - strategies.scalping - ERROR - Error processing SUIUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 109, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 224, in generate_trading_signal
+    signal_strength = max(min(signal_strength * 1.2, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                                     ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:49:20,458 - strategies.scalping - ERROR - Error processing EOSUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 109, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 224, in generate_trading_signal
+    signal_strength = max(min(signal_strength * 1.2, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                                     ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:49:22,936 - strategies.scalping - ERROR - Error processing HBARUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 109, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 224, in generate_trading_signal
+    signal_strength = max(min(signal_strength * 1.2, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                                     ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:49:25,530 - strategies.scalping - ERROR - Error processing FDUSDUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 109, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 224, in generate_trading_signal
+    signal_strength = max(min(signal_strength * 1.2, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                                     ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:49:28,152 - strategies.scalping - ERROR - Error processing AAVEUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 109, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 224, in generate_trading_signal
+    signal_strength = max(min(signal_strength * 1.2, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                                     ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:49:30,825 - strategies.scalping - ERROR - Error processing POLUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 109, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 224, in generate_trading_signal
+    signal_strength = max(min(signal_strength * 1.2, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                                     ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:49:33,414 - strategies.scalping - ERROR - Error processing SANDUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 109, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 224, in generate_trading_signal
+    signal_strength = max(min(signal_strength * 1.2, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                                     ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:49:35,897 - strategies.scalping - ERROR - Error processing DYDXUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 109, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 224, in generate_trading_signal
+    signal_strength = max(min(signal_strength * 1.2, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                                     ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:51:00,917 - strategies.scalping - ERROR - Error processing BTCUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 109, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 224, in generate_trading_signal
+    signal_strength = max(min(signal_strength * 1.2, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                                     ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:51:03,396 - strategies.scalping - ERROR - Error processing XRPUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 109, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 224, in generate_trading_signal
+    signal_strength = max(min(signal_strength * 1.2, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                                     ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:51:05,840 - strategies.scalping - ERROR - Error processing ETHUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 109, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 224, in generate_trading_signal
+    signal_strength = max(min(signal_strength * 1.2, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                                     ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:51:08,531 - strategies.scalping - ERROR - Error processing BNBUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 109, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 224, in generate_trading_signal
+    signal_strength = max(min(signal_strength * 1.2, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                                     ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:51:11,038 - strategies.scalping - ERROR - Error processing LTCUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 109, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 224, in generate_trading_signal
+    signal_strength = max(min(signal_strength * 1.2, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                                     ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:51:13,495 - strategies.scalping - ERROR - Error processing ADAUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 109, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 224, in generate_trading_signal
+    signal_strength = max(min(signal_strength * 1.2, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                                     ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:51:16,176 - strategies.scalping - ERROR - Error processing SOLUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 109, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 224, in generate_trading_signal
+    signal_strength = max(min(signal_strength * 1.2, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                                     ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:51:18,731 - strategies.scalping - ERROR - Error processing ARBUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 109, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 224, in generate_trading_signal
+    signal_strength = max(min(signal_strength * 1.2, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                                     ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:51:21,540 - strategies.scalping - ERROR - Error processing DOTUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 109, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 224, in generate_trading_signal
+    signal_strength = max(min(signal_strength * 1.2, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                                     ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:51:25,390 - strategies.scalping - ERROR - Error processing NEARUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 109, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 224, in generate_trading_signal
+    signal_strength = max(min(signal_strength * 1.2, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                                     ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:51:28,015 - strategies.scalping - ERROR - Error processing TRXUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 109, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 224, in generate_trading_signal
+    signal_strength = max(min(signal_strength * 1.2, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                                     ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:51:30,495 - strategies.scalping - ERROR - Error processing AVAXUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 109, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 224, in generate_trading_signal
+    signal_strength = max(min(signal_strength * 1.2, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                                     ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:51:33,001 - strategies.scalping - ERROR - Error processing SUIUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 109, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 224, in generate_trading_signal
+    signal_strength = max(min(signal_strength * 1.2, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                                     ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:51:35,730 - strategies.scalping - ERROR - Error processing EOSUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 109, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 224, in generate_trading_signal
+    signal_strength = max(min(signal_strength * 1.2, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                                     ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:51:38,377 - strategies.scalping - ERROR - Error processing FDUSDUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 109, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 224, in generate_trading_signal
+    signal_strength = max(min(signal_strength * 1.2, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                                     ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:51:41,085 - strategies.scalping - ERROR - Error processing HBARUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 109, in run_iteration
+    signal = await self.generate_trading_signal(symbol)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 224, in generate_trading_signal
+    signal_strength = max(min(signal_strength * 1.2, thresholds['max_signal_strength']), thresholds['min_signal_strength'])
+                                                     ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'max_signal_strength'
+2024-12-05 14:51:43,520 - strategies.scalping - ERROR - Error processing AAVEUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 109, in run_iteration
+    except Exception as e:
+                         ^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 224, in generate_trading_signal
+    # Log detailed sell conditions
+                                   
+KeyError: 'max_signal_strength'
+2024-12-05 14:51:46,261 - strategies.scalping - ERROR - Error processing POLUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 109, in run_iteration
+    except Exception as e:
+                         ^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 224, in generate_trading_signal
+    # Log detailed sell conditions
+                                   
+KeyError: 'max_signal_strength'
+2024-12-05 14:51:48,961 - strategies.scalping - ERROR - Error processing SANDUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 109, in run_iteration
+    except Exception as e:
+                         ^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 224, in generate_trading_signal
+    # Log detailed sell conditions
+                                   
+KeyError: 'max_signal_strength'
+2024-12-05 14:51:52,136 - strategies.scalping - ERROR - Error processing DYDXUSDT: 'max_signal_strength'
+Traceback (most recent call last):
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 109, in run_iteration
+    except Exception as e:
+                         ^^
+  File "C:\Users\USHER\Desktop\OMEGA\strategies\scalping.py", line 224, in generate_trading_signal
+    # Log detailed sell conditions
+                                   
+KeyError: 'max_signal_strength'
+2024-12-05 15:10:45,292 - exchange.binance_client - ERROR - Max retries reached for get_symbol_ticker: APIError(code=-1121): Invalid symbol.
+2024-12-05 15:10:45,303 - exchange.binance_client - ERROR - Error getting total balance in USDT: APIError(code=-1121): Invalid symbol.
+2024-12-05 15:10:45,308 - __main__ - ERROR - Error getting account balance: object float can't be used in 'await' expression
+2024-12-05 15:10:48,168 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 15:10:49,599 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 15:10:51,033 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 15:10:51,039 - exchange.binance_client - ERROR - Max retries reached for create_order: 'step_size'
+2024-12-05 15:10:51,042 - exchange.binance_client - ERROR - Unexpected error creating market order: 'step_size'
+2024-12-05 15:10:54,313 - exchange.binance_client - ERROR - Max retries reached for get_symbol_ticker: APIError(code=-1121): Invalid symbol.
+2024-12-05 15:10:54,318 - exchange.binance_client - ERROR - Unexpected error converting TRY to USDT: APIError(code=-1121): Invalid symbol.
+2024-12-05 15:10:57,483 - exchange.binance_client - ERROR - Max retries reached for get_symbol_ticker: APIError(code=-1121): Invalid symbol.
+2024-12-05 15:10:57,486 - exchange.binance_client - ERROR - Unexpected error converting ZAR to USDT: APIError(code=-1121): Invalid symbol.
+2024-12-05 15:11:00,762 - exchange.binance_client - ERROR - Max retries reached for get_symbol_ticker: APIError(code=-1121): Invalid symbol.
+2024-12-05 15:11:00,767 - exchange.binance_client - ERROR - Unexpected error converting IDRT to USDT: APIError(code=-1121): Invalid symbol.
+2024-12-05 15:11:04,247 - exchange.binance_client - ERROR - Max retries reached for get_symbol_ticker: APIError(code=-1121): Invalid symbol.
+2024-12-05 15:11:04,253 - exchange.binance_client - ERROR - Unexpected error converting UAH to USDT: APIError(code=-1121): Invalid symbol.
+2024-12-05 15:11:09,673 - exchange.binance_client - ERROR - Max retries reached for get_symbol_ticker: APIError(code=-1121): Invalid symbol.
+2024-12-05 15:11:09,679 - exchange.binance_client - ERROR - Unexpected error converting DAI to USDT: APIError(code=-1121): Invalid symbol.
+2024-12-05 15:11:14,994 - exchange.binance_client - ERROR - Max retries reached for get_symbol_ticker: APIError(code=-1121): Invalid symbol.
+2024-12-05 15:11:15,001 - exchange.binance_client - ERROR - Unexpected error converting BRL to USDT: APIError(code=-1121): Invalid symbol.
+2024-12-05 15:11:18,372 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 15:11:20,524 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 15:11:21,959 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 15:11:21,963 - exchange.binance_client - ERROR - Max retries reached for create_order: 'step_size'
+2024-12-05 15:11:21,967 - exchange.binance_client - ERROR - Unexpected error creating market order: 'step_size'
+2024-12-05 15:11:25,949 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 15:11:28,101 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 15:11:29,467 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 15:11:29,468 - exchange.binance_client - ERROR - Max retries reached for create_order: 'step_size'
+2024-12-05 15:11:29,470 - exchange.binance_client - ERROR - Unexpected error creating market order: 'step_size'
+2024-12-05 15:11:32,094 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 15:11:34,244 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 15:11:35,677 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 15:11:35,683 - exchange.binance_client - ERROR - Max retries reached for create_order: 'step_size'
+2024-12-05 15:11:35,686 - exchange.binance_client - ERROR - Unexpected error creating market order: 'step_size'
+2024-12-05 15:11:38,443 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 15:11:39,877 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 15:11:42,024 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 15:11:42,031 - exchange.binance_client - ERROR - Max retries reached for create_order: 'step_size'
+2024-12-05 15:11:42,035 - exchange.binance_client - ERROR - Unexpected error creating market order: 'step_size'
+2024-12-05 15:11:45,869 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 15:11:47,247 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 15:11:49,401 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 15:11:49,410 - exchange.binance_client - ERROR - Max retries reached for create_order: 'step_size'
+2024-12-05 15:11:49,413 - exchange.binance_client - ERROR - Unexpected error creating market order: 'step_size'
+2024-12-05 15:11:52,165 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 15:11:53,594 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 15:11:55,742 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 15:11:55,750 - exchange.binance_client - ERROR - Max retries reached for create_order: 'step_size'
+2024-12-05 15:11:55,753 - exchange.binance_client - ERROR - Unexpected error creating market order: 'step_size'
+2024-12-05 15:11:59,741 - exchange.binance_client - ERROR - Max retries reached for get_symbol_ticker: APIError(code=-1121): Invalid symbol.
+2024-12-05 15:11:59,747 - exchange.binance_client - ERROR - Unexpected error converting PLN to USDT: APIError(code=-1121): Invalid symbol.
+2024-12-05 15:12:03,736 - exchange.binance_client - ERROR - Max retries reached for get_symbol_ticker: APIError(code=-1121): Invalid symbol.
+2024-12-05 15:12:03,739 - exchange.binance_client - ERROR - Unexpected error converting RON to USDT: APIError(code=-1121): Invalid symbol.
+2024-12-05 15:12:08,443 - exchange.binance_client - ERROR - Max retries reached for get_symbol_ticker: APIError(code=-1121): Invalid symbol.
+2024-12-05 15:12:08,448 - exchange.binance_client - ERROR - Unexpected error converting ARS to USDT: APIError(code=-1121): Invalid symbol.
+2024-12-05 15:12:12,542 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 15:12:14,588 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 15:12:16,740 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 15:12:16,743 - exchange.binance_client - ERROR - Max retries reached for create_order: 'step_size'
+2024-12-05 15:12:16,746 - exchange.binance_client - ERROR - Unexpected error creating market order: 'step_size'
+2024-12-05 15:12:20,834 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 15:12:22,984 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 15:12:24,420 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 15:12:24,423 - exchange.binance_client - ERROR - Max retries reached for create_order: 'step_size'
+2024-12-05 15:12:24,427 - exchange.binance_client - ERROR - Unexpected error creating market order: 'step_size'
+2024-12-05 15:12:27,796 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 15:12:29,233 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 15:12:31,383 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 15:12:31,387 - exchange.binance_client - ERROR - Max retries reached for create_order: 'step_size'
+2024-12-05 15:12:31,390 - exchange.binance_client - ERROR - Unexpected error creating market order: 'step_size'
+2024-12-05 15:12:34,762 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 15:12:36,193 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 15:12:38,345 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 15:12:38,348 - exchange.binance_client - ERROR - Max retries reached for create_order: 'step_size'
+2024-12-05 15:12:38,352 - exchange.binance_client - ERROR - Unexpected error creating market order: 'step_size'
+2024-12-05 15:12:42,338 - exchange.binance_client - ERROR - Max retries reached for get_symbol_ticker: APIError(code=-1121): Invalid symbol.
+2024-12-05 15:12:42,342 - exchange.binance_client - ERROR - Unexpected error converting JPY to USDT: APIError(code=-1121): Invalid symbol.
+2024-12-05 15:12:46,943 - exchange.binance_client - ERROR - Max retries reached for get_symbol_ticker: APIError(code=-1121): Invalid symbol.
+2024-12-05 15:12:46,950 - exchange.binance_client - ERROR - Unexpected error converting MXN to USDT: APIError(code=-1121): Invalid symbol.
+2024-12-05 15:12:51,658 - exchange.binance_client - ERROR - Max retries reached for get_symbol_ticker: APIError(code=-1121): Invalid symbol.
+2024-12-05 15:12:51,663 - exchange.binance_client - ERROR - Unexpected error converting CZK to USDT: APIError(code=-1121): Invalid symbol.
+2024-12-05 15:12:56,367 - exchange.binance_client - ERROR - Max retries reached for get_symbol_ticker: APIError(code=-1121): Invalid symbol.
+2024-12-05 15:12:56,373 - exchange.binance_client - ERROR - Unexpected error converting COP to USDT: APIError(code=-1121): Invalid symbol.
+2024-12-05 15:16:41,512 - strategies.scalping - ERROR - Error calculating position size for POLUSDT: float division by zero
+2024-12-05 15:25:42,462 - strategies.scalping - ERROR - Error calculating position size for HBARUSDT: float division by zero
+2024-12-05 15:25:51,192 - strategies.scalping - ERROR - Error calculating position size for POLUSDT: float division by zero
+2024-12-05 15:28:05,508 - strategies.scalping - ERROR - Error calculating position size for TRXUSDT: float division by zero
+2024-12-05 15:28:17,165 - strategies.scalping - ERROR - Error calculating position size for HBARUSDT: float division by zero
+2024-12-05 15:33:42,649 - strategies.scalping - ERROR - Error calculating position size for FDUSDUSDT: float division by zero
+2024-12-05 15:33:48,597 - strategies.scalping - ERROR - Error calculating position size for POLUSDT: float division by zero
+2024-12-05 15:35:51,275 - strategies.scalping - ERROR - Error calculating position size for TRXUSDT: float division by zero
+2024-12-05 15:36:18,223 - strategies.scalping - ERROR - Error calculating position size for POLUSDT: float division by zero
+2024-12-05 15:52:47,041 - strategies.scalping - ERROR - Error calculating position size for FDUSDUSDT: float division by zero
+2024-12-05 15:55:40,423 - strategies.scalping - ERROR - Error calculating position size for POLUSDT: float division by zero
+2024-12-05 15:58:32,392 - strategies.scalping - ERROR - Error calculating position size for HBARUSDT: float division by zero
+2024-12-05 15:58:35,732 - strategies.scalping - ERROR - Error calculating position size for FDUSDUSDT: float division by zero
+2024-12-05 16:04:26,592 - strategies.scalping - ERROR - Error calculating position size for HBARUSDT: float division by zero
+2024-12-05 16:07:26,473 - strategies.scalping - ERROR - Error calculating position size for POLUSDT: float division by zero
+2024-12-05 16:07:29,742 - strategies.scalping - ERROR - Error calculating position size for SANDUSDT: float division by zero
+2024-12-05 16:12:56,696 - strategies.scalping - ERROR - Error calculating position size for HBARUSDT: float division by zero
+2024-12-05 16:13:04,941 - strategies.scalping - ERROR - Error calculating position size for POLUSDT: float division by zero
+2024-12-05 16:20:57,332 - strategies.scalping - ERROR - Error calculating position size for HBARUSDT: float division by zero
+2024-12-05 16:23:42,126 - strategies.scalping - ERROR - Error calculating position size for HBARUSDT: float division by zero
+2024-12-05 16:23:58,705 - strategies.scalping - ERROR - Error calculating position size for SANDUSDT: float division by zero
+2024-12-05 16:26:46,705 - strategies.scalping - ERROR - Error calculating position size for SANDUSDT: float division by zero
+2024-12-05 16:32:07,744 - strategies.scalping - ERROR - Error calculating position size for FDUSDUSDT: float division by zero
+2024-12-05 16:32:21,650 - strategies.scalping - ERROR - Error calculating position size for SANDUSDT: float division by zero
+2024-12-05 16:37:59,652 - strategies.scalping - ERROR - Error calculating position size for TRXUSDT: float division by zero
+2024-12-05 16:49:38,691 - strategies.scalping - ERROR - Error calculating position size for TRXUSDT: float division by zero
+2024-12-05 16:49:52,784 - strategies.scalping - ERROR - Error calculating position size for FDUSDUSDT: float division by zero
+2024-12-05 16:49:59,071 - strategies.scalping - ERROR - Error calculating position size for POLUSDT: float division by zero
+2024-12-05 16:52:54,700 - strategies.scalping - ERROR - Error calculating position size for SANDUSDT: float division by zero
+2024-12-05 16:55:29,377 - strategies.scalping - ERROR - Error calculating position size for HBARUSDT: float division by zero
+2024-12-05 16:55:48,897 - strategies.scalping - ERROR - Error calculating position size for SANDUSDT: float division by zero
+2024-12-05 16:58:36,257 - strategies.scalping - ERROR - Error calculating position size for HBARUSDT: float division by zero
+2024-12-05 17:01:30,375 - strategies.scalping - ERROR - Error calculating position size for POLUSDT: float division by zero
+2024-12-05 17:04:17,424 - strategies.scalping - ERROR - Error calculating position size for FDUSDUSDT: float division by zero
+2024-12-05 17:04:31,619 - strategies.scalping - ERROR - Error calculating position size for SANDUSDT: float division by zero
+2024-12-05 17:07:08,465 - strategies.scalping - ERROR - Error calculating position size for TRXUSDT: float division by zero
+2024-12-05 17:13:17,922 - strategies.scalping - ERROR - Error calculating position size for HBARUSDT: float division by zero
+2024-12-05 17:13:31,964 - strategies.scalping - ERROR - Error calculating position size for POLUSDT: float division by zero
+2024-12-05 17:18:48,934 - strategies.scalping - ERROR - Error calculating position size for TRXUSDT: float division by zero
+2024-12-05 17:19:01,701 - strategies.scalping - ERROR - Error calculating position size for HBARUSDT: float division by zero
+2024-12-05 17:19:16,887 - strategies.scalping - ERROR - Error calculating position size for SANDUSDT: float division by zero
+2024-12-05 17:21:44,605 - strategies.scalping - ERROR - Error calculating position size for POLUSDT: float division by zero
+2024-12-05 17:25:08,804 - strategies.scalping - ERROR - Error calculating position size for POLUSDT: float division by zero
+2024-12-05 17:28:07,433 - strategies.scalping - ERROR - Error calculating position size for POLUSDT: float division by zero
+2024-12-05 17:30:30,873 - strategies.scalping - ERROR - Error calculating position size for HBARUSDT: float division by zero
+2024-12-05 17:30:40,277 - strategies.scalping - ERROR - Error calculating position size for POLUSDT: float division by zero
+2024-12-05 17:33:33,933 - strategies.scalping - ERROR - Error calculating position size for HBARUSDT: float division by zero
+2024-12-05 17:33:52,467 - strategies.scalping - ERROR - Error calculating position size for POLUSDT: float division by zero
+2024-12-05 17:34:00,648 - strategies.scalping - ERROR - Error calculating position size for SANDUSDT: float division by zero
+2024-12-05 17:39:08,187 - strategies.scalping - ERROR - Error calculating position size for HBARUSDT: float division by zero
+2024-12-05 17:50:39,318 - strategies.scalping - ERROR - Error calculating position size for POLUSDT: float division by zero
+2024-12-05 17:57:17,878 - strategies.scalping - ERROR - Error calculating position size for SANDUSDT: float division by zero
+2024-12-05 17:59:58,883 - strategies.scalping - ERROR - Error calculating position size for FDUSDUSDT: float division by zero
+2024-12-05 18:00:13,791 - strategies.scalping - ERROR - Error calculating position size for SANDUSDT: float division by zero
+2024-12-05 18:03:31,718 - strategies.scalping - ERROR - Error calculating position size for HBARUSDT: float division by zero
+2024-12-05 18:03:45,973 - strategies.scalping - ERROR - Error calculating position size for POLUSDT: float division by zero
+2024-12-05 18:06:35,511 - strategies.scalping - ERROR - Error calculating position size for HBARUSDT: float division by zero
+2024-12-05 18:09:55,261 - strategies.scalping - ERROR - Error calculating position size for POLUSDT: float division by zero
+2024-12-05 18:19:07,123 - strategies.scalping - ERROR - Error calculating position size for SANDUSDT: float division by zero
+2024-12-05 18:22:05,477 - strategies.scalping - ERROR - Error calculating position size for POLUSDT: float division by zero
+2024-12-05 18:24:47,759 - strategies.scalping - ERROR - Error calculating position size for FDUSDUSDT: float division by zero
+2024-12-05 18:24:59,165 - strategies.scalping - ERROR - Error calculating position size for POLUSDT: float division by zero
+2024-12-05 18:27:35,537 - strategies.scalping - ERROR - Error calculating position size for SANDUSDT: float division by zero
+2024-12-05 18:30:27,150 - strategies.scalping - ERROR - Error calculating position size for HBARUSDT: float division by zero
+2024-12-05 18:30:42,216 - strategies.scalping - ERROR - Error calculating position size for POLUSDT: float division by zero
+2024-12-05 18:30:45,461 - strategies.scalping - ERROR - Error calculating position size for SANDUSDT: float division by zero
+2024-12-05 18:33:22,034 - strategies.scalping - ERROR - Error calculating position size for HBARUSDT: float division by zero
+2024-12-05 18:33:25,522 - strategies.scalping - ERROR - Error calculating position size for FDUSDUSDT: float division by zero
+2024-12-05 18:39:35,323 - strategies.scalping - ERROR - Error calculating position size for FDUSDUSDT: float division by zero
+2024-12-05 18:47:48,709 - strategies.scalping - ERROR - Error calculating position size for TRXUSDT: float division by zero
+2024-12-05 18:48:29,610 - strategies.scalping - ERROR - Error calculating position size for SANDUSDT: float division by zero
+2024-12-05 18:54:10,000 - strategies.scalping - ERROR - Error calculating position size for POLUSDT: float division by zero
+2024-12-05 19:11:55,066 - exchange.binance_client - ERROR - Error getting account information: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2024-12-05 19:12:31,219 - strategies.scalping - ERROR - Error calculating position size for TRXUSDT: float division by zero
+2024-12-05 19:12:54,133 - strategies.scalping - ERROR - Error calculating position size for HBARUSDT: float division by zero
+2024-12-05 19:17:01,044 - strategies.scalping - ERROR - Error calculating position size for HBARUSDT: float division by zero
+2024-12-05 19:17:04,554 - strategies.scalping - ERROR - Error calculating position size for FDUSDUSDT: float division by zero
+2024-12-05 19:17:12,230 - strategies.scalping - ERROR - Error calculating position size for POLUSDT: float division by zero
+2024-12-05 19:21:48,041 - strategies.scalping - ERROR - Error calculating position size for FDUSDUSDT: float division by zero
+2024-12-05 19:22:31,532 - strategies.scalping - ERROR - Error calculating position size for SANDUSDT: float division by zero
+2024-12-05 19:26:59,685 - strategies.scalping - ERROR - Error calculating position size for HBARUSDT: float division by zero
+2024-12-05 19:27:59,497 - strategies.scalping - ERROR - Error calculating position size for SANDUSDT: float division by zero
+2024-12-05 19:34:20,777 - strategies.scalping - ERROR - Error calculating position size for SANDUSDT: float division by zero
+2024-12-05 19:49:00,429 - strategies.scalping - ERROR - Error calculating position size for TRXUSDT: float division by zero
+2024-12-05 19:56:53,384 - strategies.scalping - ERROR - Error calculating position size for FDUSDUSDT: float division by zero
+2024-12-05 19:57:45,680 - strategies.scalping - ERROR - Error calculating position size for SANDUSDT: float division by zero
+2024-12-05 20:01:57,346 - strategies.scalping - ERROR - Error calculating position size for TRXUSDT: float division by zero
+2024-12-05 20:03:26,496 - strategies.scalping - ERROR - Error calculating position size for SANDUSDT: float division by zero
+2024-12-05 20:05:57,422 - strategies.scalping - ERROR - Error calculating position size for TRXUSDT: float division by zero
+2024-12-05 20:06:53,351 - strategies.scalping - ERROR - Error calculating position size for FDUSDUSDT: float division by zero
+2024-12-05 20:10:04,542 - strategies.scalping - ERROR - Error calculating position size for SANDUSDT: float division by zero
+2024-12-05 20:13:02,197 - strategies.scalping - ERROR - Error calculating position size for POLUSDT: float division by zero
+2024-12-05 20:15:31,051 - strategies.scalping - ERROR - Error calculating position size for TRXUSDT: float division by zero
+2024-12-05 20:16:16,188 - strategies.scalping - ERROR - Error calculating position size for SANDUSDT: float division by zero
+2024-12-05 20:18:54,626 - strategies.scalping - ERROR - Error calculating position size for SANDUSDT: float division by zero
+2024-12-05 20:25:15,585 - strategies.scalping - ERROR - Error calculating position size for HBARUSDT: float division by zero
+2024-12-05 20:27:39,900 - strategies.scalping - ERROR - Error calculating position size for HBARUSDT: float division by zero
+2024-12-05 20:27:52,045 - strategies.scalping - ERROR - Error calculating position size for SANDUSDT: float division by zero
+2024-12-05 20:30:05,970 - strategies.scalping - ERROR - Error calculating position size for HBARUSDT: float division by zero
+2024-12-05 20:30:24,399 - strategies.scalping - ERROR - Error calculating position size for SANDUSDT: float division by zero
+2024-12-05 20:32:51,445 - strategies.scalping - ERROR - Error calculating position size for TRXUSDT: float division by zero
+2024-12-05 20:33:05,537 - strategies.scalping - ERROR - Error calculating position size for HBARUSDT: float division by zero
+2024-12-05 20:33:20,287 - strategies.scalping - ERROR - Error calculating position size for SANDUSDT: float division by zero
+2024-12-05 20:35:36,713 - strategies.scalping - ERROR - Error calculating position size for TRXUSDT: float division by zero
+2024-12-05 20:35:46,799 - strategies.scalping - ERROR - Error calculating position size for HBARUSDT: float division by zero
+2024-12-05 20:35:58,858 - strategies.scalping - ERROR - Error calculating position size for SANDUSDT: float division by zero
+2024-12-05 20:38:41,898 - strategies.scalping - ERROR - Error calculating position size for POLUSDT: float division by zero
+2024-12-05 20:40:42,862 - strategies.scalping - ERROR - Error calculating position size for TRXUSDT: float division by zero
+2024-12-05 20:41:01,374 - strategies.scalping - ERROR - Error calculating position size for HBARUSDT: float division by zero
+2024-12-05 20:41:06,448 - strategies.scalping - ERROR - Error calculating position size for POLUSDT: float division by zero
+2024-12-05 20:43:32,733 - strategies.scalping - ERROR - Error calculating position size for HBARUSDT: float division by zero
+2024-12-05 20:43:37,743 - strategies.scalping - ERROR - Error calculating position size for POLUSDT: float division by zero
+2024-12-05 20:55:50,605 - exchange.binance_client - ERROR - Max retries reached for get_symbol_ticker: APIError(code=-1121): Invalid symbol.
+2024-12-05 20:55:50,615 - exchange.binance_client - ERROR - Error getting total balance in USDT: APIError(code=-1121): Invalid symbol.
+2024-12-05 20:55:50,625 - __main__ - ERROR - Error getting account balance: object float can't be used in 'await' expression
+2024-12-05 20:55:53,289 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 20:55:54,701 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 20:55:56,119 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 20:55:56,120 - exchange.binance_client - ERROR - Max retries reached for create_order: 'step_size'
+2024-12-05 20:55:56,121 - exchange.binance_client - ERROR - Unexpected error creating market order: 'step_size'
+2024-12-05 20:55:59,308 - exchange.binance_client - ERROR - Max retries reached for get_symbol_ticker: APIError(code=-1121): Invalid symbol.
+2024-12-05 20:55:59,310 - exchange.binance_client - ERROR - Unexpected error converting TRY to USDT: APIError(code=-1121): Invalid symbol.
+2024-12-05 20:56:02,489 - exchange.binance_client - ERROR - Max retries reached for get_symbol_ticker: APIError(code=-1121): Invalid symbol.
+2024-12-05 20:56:02,491 - exchange.binance_client - ERROR - Unexpected error converting ZAR to USDT: APIError(code=-1121): Invalid symbol.
+2024-12-05 20:56:05,762 - exchange.binance_client - ERROR - Max retries reached for get_symbol_ticker: APIError(code=-1121): Invalid symbol.
+2024-12-05 20:56:05,766 - exchange.binance_client - ERROR - Unexpected error converting IDRT to USDT: APIError(code=-1121): Invalid symbol.
+2024-12-05 20:56:09,040 - exchange.binance_client - ERROR - Max retries reached for get_symbol_ticker: APIError(code=-1121): Invalid symbol.
+2024-12-05 20:56:09,043 - exchange.binance_client - ERROR - Unexpected error converting UAH to USDT: APIError(code=-1121): Invalid symbol.
+2024-12-05 20:56:12,166 - exchange.binance_client - ERROR - Max retries reached for get_symbol_ticker: APIError(code=-1121): Invalid symbol.
+2024-12-05 20:56:12,168 - exchange.binance_client - ERROR - Unexpected error converting DAI to USDT: APIError(code=-1121): Invalid symbol.
+2024-12-05 20:56:16,104 - exchange.binance_client - ERROR - Max retries reached for get_symbol_ticker: APIError(code=-1121): Invalid symbol.
+2024-12-05 20:56:16,107 - exchange.binance_client - ERROR - Unexpected error converting BRL to USDT: APIError(code=-1121): Invalid symbol.
+2024-12-05 20:56:20,104 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 20:56:22,153 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 20:56:24,196 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 20:56:24,199 - exchange.binance_client - ERROR - Max retries reached for create_order: 'step_size'
+2024-12-05 20:56:24,202 - exchange.binance_client - ERROR - Unexpected error creating market order: 'step_size'
+2024-12-05 20:56:27,469 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 20:56:28,903 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 20:56:30,355 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 20:56:30,358 - exchange.binance_client - ERROR - Max retries reached for create_order: 'step_size'
+2024-12-05 20:56:30,360 - exchange.binance_client - ERROR - Unexpected error creating market order: 'step_size'
+2024-12-05 20:56:33,715 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 20:56:35,164 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 20:56:36,586 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 20:56:36,589 - exchange.binance_client - ERROR - Max retries reached for create_order: 'step_size'
+2024-12-05 20:56:36,591 - exchange.binance_client - ERROR - Unexpected error creating market order: 'step_size'
+2024-12-05 20:56:40,008 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 20:56:42,051 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 20:56:44,436 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 20:56:44,438 - exchange.binance_client - ERROR - Max retries reached for create_order: 'step_size'
+2024-12-05 20:56:44,440 - exchange.binance_client - ERROR - Unexpected error creating market order: 'step_size'
+2024-12-05 20:56:47,744 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 20:56:49,132 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 20:56:50,550 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 20:56:50,553 - exchange.binance_client - ERROR - Max retries reached for create_order: 'step_size'
+2024-12-05 20:56:50,556 - exchange.binance_client - ERROR - Unexpected error creating market order: 'step_size'
+2024-12-05 20:56:53,885 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 20:56:56,039 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 20:56:58,421 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 20:56:58,423 - exchange.binance_client - ERROR - Max retries reached for create_order: 'step_size'
+2024-12-05 20:56:58,425 - exchange.binance_client - ERROR - Unexpected error creating market order: 'step_size'
+2024-12-05 20:57:02,219 - exchange.binance_client - ERROR - Max retries reached for get_symbol_ticker: APIError(code=-1121): Invalid symbol.
+2024-12-05 20:57:02,221 - exchange.binance_client - ERROR - Unexpected error converting PLN to USDT: APIError(code=-1121): Invalid symbol.
+2024-12-05 20:57:05,493 - exchange.binance_client - ERROR - Max retries reached for get_symbol_ticker: APIError(code=-1121): Invalid symbol.
+2024-12-05 20:57:05,496 - exchange.binance_client - ERROR - Unexpected error converting RON to USDT: APIError(code=-1121): Invalid symbol.
+2024-12-05 20:57:10,065 - exchange.binance_client - ERROR - Max retries reached for get_symbol_ticker: APIError(code=-1121): Invalid symbol.
+2024-12-05 20:57:10,067 - exchange.binance_client - ERROR - Unexpected error converting ARS to USDT: APIError(code=-1121): Invalid symbol.
+2024-12-05 20:57:12,727 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 20:57:15,113 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 20:57:16,522 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 20:57:16,525 - exchange.binance_client - ERROR - Max retries reached for create_order: 'step_size'
+2024-12-05 20:57:16,528 - exchange.binance_client - ERROR - Unexpected error creating market order: 'step_size'
+2024-12-05 20:57:20,612 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 20:57:21,983 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 20:57:24,039 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 20:57:24,041 - exchange.binance_client - ERROR - Max retries reached for create_order: 'step_size'
+2024-12-05 20:57:24,042 - exchange.binance_client - ERROR - Unexpected error creating market order: 'step_size'
+2024-12-05 20:57:27,290 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 20:57:29,419 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 20:57:31,569 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 20:57:31,571 - exchange.binance_client - ERROR - Max retries reached for create_order: 'step_size'
+2024-12-05 20:57:31,574 - exchange.binance_client - ERROR - Unexpected error creating market order: 'step_size'
+2024-12-05 20:57:34,949 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 20:57:36,382 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 20:57:38,531 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 20:57:38,532 - exchange.binance_client - ERROR - Max retries reached for create_order: 'step_size'
+2024-12-05 20:57:38,534 - exchange.binance_client - ERROR - Unexpected error creating market order: 'step_size'
+2024-12-05 20:57:43,445 - exchange.binance_client - ERROR - Max retries reached for get_symbol_ticker: APIError(code=-1121): Invalid symbol.
+2024-12-05 20:57:43,446 - exchange.binance_client - ERROR - Unexpected error converting JPY to USDT: APIError(code=-1121): Invalid symbol.
+2024-12-05 20:57:47,900 - exchange.binance_client - ERROR - Max retries reached for get_symbol_ticker: APIError(code=-1121): Invalid symbol.
+2024-12-05 20:57:47,902 - exchange.binance_client - ERROR - Unexpected error converting MXN to USDT: APIError(code=-1121): Invalid symbol.
+2024-12-05 20:57:52,460 - exchange.binance_client - ERROR - Max retries reached for get_symbol_ticker: APIError(code=-1121): Invalid symbol.
+2024-12-05 20:57:52,464 - exchange.binance_client - ERROR - Unexpected error converting CZK to USDT: APIError(code=-1121): Invalid symbol.
+2024-12-05 20:57:56,450 - exchange.binance_client - ERROR - Max retries reached for get_symbol_ticker: APIError(code=-1121): Invalid symbol.
+2024-12-05 20:57:56,453 - exchange.binance_client - ERROR - Unexpected error converting COP to USDT: APIError(code=-1121): Invalid symbol.
