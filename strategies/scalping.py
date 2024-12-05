@@ -531,63 +531,6 @@ class ScalpingStrategy:
                 logger.warning(f"Position value {position_size * current_price:.8f} below minimum notional {min_notional} for {symbol}")
                 return 0.0
             
-            # Calculate base risk amount with safety checks
-            if account_balance <= 0:
-                logger.warning(f"Invalid account balance: {account_balance}")
-                return 0.0
-                
-            if current_price <= 0:
-                logger.warning(f"Invalid current price for {symbol}: {current_price}")
-                return 0.0
-
-            risk_amount = account_balance * self.risk_per_trade
-            
-            # Scale risk based on price range with safety
-            price_scale = math.log10(max(current_price, 1.1))  # Ensure never 1 to avoid log10(1) = 0
-            scaled_risk = risk_amount / price_scale
-            
-            # Calculate dynamic stop loss distance with safety
-            atr = await self.calculate_atr(symbol, period=14, smoothing=5)
-            stop_loss_distance = max(atr * 1.5, current_price * 0.005, 0.00001)  # Ensure never 0
-            
-            # Calculate base position size with price-scaled risk
-            position_size = scaled_risk / stop_loss_distance
-            
-            # Apply volatility adjustment with safety
-            volatility = max(min(volatility, 0.95), 0)  # Cap volatility between 0 and 0.95
-            volatility_factor = 1 / (1 + volatility * 2)
-            position_size *= volatility_factor
-            
-            # Consider market liquidity with longer period
-            avg_volume = await self.get_average_volume(symbol, period=50)
-            if avg_volume > 0:  # Only apply if we have valid volume data
-                max_trade_volume = avg_volume * 0.002  # Reduced to 0.2% of average volume
-                position_size = min(position_size, max_trade_volume)
-            
-            # Apply maximum position size limit
-            max_position_value = account_balance * self.max_position_size
-            if current_price > 0:  # Prevent division by zero
-                position_size = min(position_size, max_position_value / current_price)
-            
-            # Round to valid step size
-            if step_size > 0:  # Prevent division by zero
-                precision = int(round(-math.log10(float(step_size))))
-                position_size = math.floor(position_size * (10 ** precision)) / (10 ** precision)
-            
-            # Ensure minimum notional value
-            if current_price > 0 and step_size > 0:  # Prevent division by zero
-                if position_size * current_price < min_notional:
-                    position_size = math.ceil(min_notional / current_price / step_size) * step_size
-            
-            # Final validation
-            if position_size < min_qty:
-                logger.warning(f"Position size {position_size} below minimum quantity {min_qty} for {symbol}")
-                return 0.0
-                
-            if position_size * current_price < min_notional:
-                logger.warning(f"Position value {position_size * current_price:.8f} below minimum notional {min_notional} for {symbol}")
-                return 0.0
-            
             # Execute the trade
             if signal == 'buy':
                 order = self.exchange_client.create_order(
@@ -644,88 +587,94 @@ class ScalpingStrategy:
             return 0.00001  # Return a default value
 
     async def calculate_position_size(self, symbol: str, account_balance: float, volatility: float, current_price: float) -> float:
+        """Calculate the position size with improved safety checks and risk management."""
         try:
+            # Input validation with detailed logging
+            if account_balance <= 0:
+                logger.warning(f"{symbol}: Invalid account balance: {account_balance}")
+                return 0.0
+            
+            if current_price <= 0:
+                logger.warning(f"{symbol}: Invalid current price: {current_price}")
+                return 0.0
+            
+            if volatility < 0:
+                logger.warning(f"{symbol}: Invalid volatility: {volatility}")
+                return 0.0
+
             # Get symbol info for validation
             symbol_info = self.exchange_client.get_symbol_info(symbol)
             if not symbol_info:
-                logger.warning(f"Could not fetch symbol info for {symbol}")
+                logger.warning(f"{symbol}: Could not fetch symbol info")
                 return 0.0
 
-            # Extract filters
+            # Extract and validate filters
             lot_size_filter = next((f for f in symbol_info['filters'] if f['filterType'] == 'LOT_SIZE'), None)
             min_notional_filter = next((f for f in symbol_info['filters'] if f['filterType'] == 'MIN_NOTIONAL'), None)
             price_filter = next((f for f in symbol_info['filters'] if f['filterType'] == 'PRICE_FILTER'), None)
             
             if not all([lot_size_filter, min_notional_filter, price_filter]):
-                logger.warning(f"Required filters not found for {symbol}")
+                logger.warning(f"{symbol}: Required filters not found")
                 return 0.0
 
-            min_qty = float(lot_size_filter['minQty'])
-            step_size = float(lot_size_filter['stepSize'])
-            min_notional = float(min_notional_filter['minNotional'])
-            tick_size = float(price_filter['tickSize'])
-
-            # Calculate base risk amount with safety checks
-            if account_balance <= 0:
-                logger.warning(f"Invalid account balance: {account_balance}")
-                return 0.0
-                
-            if current_price <= 0:
-                logger.warning(f"Invalid current price for {symbol}: {current_price}")
+            # Extract filter values with validation
+            try:
+                min_qty = float(lot_size_filter['minQty'])
+                step_size = float(lot_size_filter['stepSize'])
+                min_notional = float(min_notional_filter['minNotional'])
+                tick_size = float(price_filter['tickSize'])
+            except (ValueError, KeyError) as e:
+                logger.error(f"{symbol}: Error parsing filters: {e}")
                 return 0.0
 
+            # Calculate base risk amount (1% of account balance)
             risk_amount = account_balance * self.risk_per_trade
-            
-            # Scale risk based on price range with safety
-            price_scale = math.log10(max(current_price, 1.1))  # Ensure never 1 to avoid log10(1) = 0
-            scaled_risk = risk_amount / price_scale
-            
-            # Calculate dynamic stop loss distance with safety
-            atr = await self.calculate_atr(symbol, period=14, smoothing=5)
-            stop_loss_distance = max(atr * 1.5, current_price * 0.005, 0.00001)  # Ensure never 0
-            
-            # Calculate base position size with price-scaled risk
-            position_size = scaled_risk / stop_loss_distance
-            
-            # Apply volatility adjustment with safety
-            volatility = max(min(volatility, 0.95), 0)  # Cap volatility between 0 and 0.95
-            volatility_factor = 1 / (1 + volatility * 2)
-            position_size *= volatility_factor
-            
-            # Consider market liquidity with longer period
+
+            # Calculate position size based on risk and current price
+            base_position = risk_amount / current_price
+
+            # Apply volatility adjustment (more conservative in high volatility)
+            volatility_factor = 1 / (1 + max(volatility, 0.1))  # Ensure denominator is never less than 1.1
+            position_size = base_position * volatility_factor
+
+            # Get average volume with safety check
             avg_volume = await self.get_average_volume(symbol, period=50)
-            if avg_volume > 0:  # Only apply if we have valid volume data
-                max_trade_volume = avg_volume * 0.002  # Reduced to 0.2% of average volume
-                position_size = min(position_size, max_trade_volume)
-            
-            # Apply maximum position size limit
+            if avg_volume > 0:
+                # Limit to 0.1% of average volume for better liquidity management
+                volume_limit = avg_volume * 0.001
+                position_size = min(position_size, volume_limit)
+
+            # Apply maximum position size limit (2% of account)
             max_position_value = account_balance * self.max_position_size
-            if current_price > 0:  # Prevent division by zero
-                position_size = min(position_size, max_position_value / current_price)
-            
+            position_size = min(position_size, max_position_value / current_price)
+
             # Round to valid step size
-            if step_size > 0:  # Prevent division by zero
-                precision = int(round(-math.log10(float(step_size))))
+            if step_size > 0:
+                precision = int(round(-math.log10(step_size)))
                 position_size = math.floor(position_size * (10 ** precision)) / (10 ** precision)
-            
+
             # Ensure minimum notional value
-            if current_price > 0 and step_size > 0:  # Prevent division by zero
-                if position_size * current_price < min_notional:
+            if position_size * current_price < min_notional:
+                if min_notional / current_price > min_qty:
                     position_size = math.ceil(min_notional / current_price / step_size) * step_size
-            
+                else:
+                    logger.warning(f"{symbol}: Cannot meet minimum notional {min_notional} with minimum quantity {min_qty}")
+                    return 0.0
+
             # Final validation
             if position_size < min_qty:
-                logger.warning(f"Position size {position_size} below minimum quantity {min_qty} for {symbol}")
+                logger.warning(f"{symbol}: Position size {position_size} below minimum quantity {min_qty}")
                 return 0.0
-                
-            if position_size * current_price < min_notional:
-                logger.warning(f"Position value {position_size * current_price:.8f} below minimum notional {min_notional} for {symbol}")
+
+            if position_size * current_price > max_position_value:
+                logger.warning(f"{symbol}: Position value {position_size * current_price} exceeds max position value {max_position_value}")
                 return 0.0
-            
+
+            logger.info(f"{symbol}: Calculated position size: {position_size:.8f} (Value: ${position_size * current_price:.2f})")
             return position_size
-            
+
         except Exception as e:
-            logger.error(f"Error calculating position size for {symbol}: {e}")
+            logger.error(f"{symbol}: Error calculating position size: {str(e)}")
             return 0.0
 
     async def update_open_trades(self):

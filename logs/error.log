@@ -23977,3 +23977,209 @@ KeyError: 'max_signal_strength'
 2024-12-05 20:57:52,464 - exchange.binance_client - ERROR - Unexpected error converting CZK to USDT: APIError(code=-1121): Invalid symbol.
 2024-12-05 20:57:56,450 - exchange.binance_client - ERROR - Max retries reached for get_symbol_ticker: APIError(code=-1121): Invalid symbol.
 2024-12-05 20:57:56,453 - exchange.binance_client - ERROR - Unexpected error converting COP to USDT: APIError(code=-1121): Invalid symbol.
+2024-12-05 21:02:51,677 - strategies.scalping - ERROR - Error executing trade for TRXUSDT: float division by zero
+2024-12-05 21:03:18,739 - strategies.scalping - ERROR - Error executing trade for HBARUSDT: float division by zero
+2024-12-05 21:03:24,281 - strategies.scalping - ERROR - Error executing trade for FDUSDUSDT: float division by zero
+2024-12-05 21:03:37,234 - strategies.scalping - ERROR - Error executing trade for SANDUSDT: float division by zero
+2024-12-05 21:06:25,930 - strategies.scalping - ERROR - Error executing trade for TRXUSDT: float division by zero
+2024-12-05 21:06:53,382 - strategies.scalping - ERROR - Error executing trade for HBARUSDT: float division by zero
+2024-12-05 21:06:59,160 - strategies.scalping - ERROR - Error executing trade for FDUSDUSDT: float division by zero
+2024-12-05 21:07:04,752 - strategies.scalping - ERROR - Error executing trade for POLUSDT: float division by zero
+2024-12-05 21:07:19,924 - strategies.scalping - ERROR - Error executing trade for SANDUSDT: float division by zero
+2024-12-05 21:10:03,113 - strategies.scalping - ERROR - Error executing trade for TRXUSDT: float division by zero
+2024-12-05 21:10:32,277 - strategies.scalping - ERROR - Error executing trade for HBARUSDT: float division by zero
+2024-12-05 21:10:38,095 - strategies.scalping - ERROR - Error executing trade for FDUSDUSDT: float division by zero
+2024-12-05 21:11:01,989 - strategies.scalping - ERROR - Error executing trade for SANDUSDT: float division by zero
+2024-12-05 21:14:53,321 - strategies.scalping - ERROR - Error executing trade for HBARUSDT: float division by zero
+2024-12-05 21:14:59,355 - strategies.scalping - ERROR - Error executing trade for FDUSDUSDT: float division by zero
+2024-12-05 21:15:05,504 - strategies.scalping - ERROR - Error executing trade for POLUSDT: float division by zero
+2024-12-05 21:17:56,842 - strategies.scalping - ERROR - Error executing trade for TRXUSDT: float division by zero
+2024-12-05 21:18:27,396 - strategies.scalping - ERROR - Error executing trade for HBARUSDT: float division by zero
+2024-12-05 21:18:33,295 - strategies.scalping - ERROR - Error executing trade for FDUSDUSDT: float division by zero
+2024-12-05 21:18:39,615 - strategies.scalping - ERROR - Error executing trade for POLUSDT: float division by zero
+2024-12-05 21:19:01,874 - strategies.scalping - ERROR - Error executing trade for SANDUSDT: float division by zero
+2024-12-05 21:21:46,405 - strategies.scalping - ERROR - Error executing trade for TRXUSDT: float division by zero
+2024-12-05 21:22:16,924 - strategies.scalping - ERROR - Error executing trade for HBARUSDT: float division by zero
+2024-12-05 21:22:23,445 - strategies.scalping - ERROR - Error executing trade for FDUSDUSDT: float division by zero
+2024-12-05 21:22:29,295 - strategies.scalping - ERROR - Error executing trade for POLUSDT: float division by zero
+2024-12-05 21:22:52,077 - strategies.scalping - ERROR - Error executing trade for SANDUSDT: float division by zero
+2024-12-05 21:25:21,415 - strategies.scalping - ERROR - Error executing trade for TRXUSDT: float division by zero
+2024-12-05 21:25:51,014 - strategies.scalping - ERROR - Error executing trade for HBARUSDT: float division by zero
+2024-12-05 21:25:56,754 - strategies.scalping - ERROR - Error executing trade for FDUSDUSDT: float division by zero
+2024-12-05 21:26:02,897 - strategies.scalping - ERROR - Error executing trade for POLUSDT: float division by zero
+2024-12-05 21:29:16,000 - strategies.scalping - ERROR - Error executing trade for TRXUSDT: float division by zero
+2024-12-05 21:29:39,781 - strategies.scalping - ERROR - Error executing trade for HBARUSDT: float division by zero
+2024-12-05 21:29:46,010 - strategies.scalping - ERROR - Error executing trade for FDUSDUSDT: float division by zero
+2024-12-05 21:29:52,238 - strategies.scalping - ERROR - Error executing trade for POLUSDT: float division by zero
+2024-12-05 21:30:14,186 - strategies.scalping - ERROR - Error executing trade for SANDUSDT: float division by zero
+2024-12-05 21:33:11,112 - strategies.scalping - ERROR - Error executing trade for TRXUSDT: float division by zero
+2024-12-05 21:33:40,819 - strategies.scalping - ERROR - Error executing trade for HBARUSDT: float division by zero
+2024-12-05 21:33:48,092 - strategies.scalping - ERROR - Error executing trade for FDUSDUSDT: float division by zero
+2024-12-05 21:33:54,319 - strategies.scalping - ERROR - Error executing trade for POLUSDT: float division by zero
+2024-12-05 21:34:16,545 - strategies.scalping - ERROR - Error executing trade for SANDUSDT: float division by zero
+2024-12-05 21:36:56,336 - strategies.scalping - ERROR - Error executing trade for TRXUSDT: float division by zero
+2024-12-05 21:37:22,411 - strategies.scalping - ERROR - Error executing trade for HBARUSDT: float division by zero
+2024-12-05 21:37:30,897 - strategies.scalping - ERROR - Error executing trade for POLUSDT: float division by zero
+2024-12-05 21:37:55,055 - strategies.scalping - ERROR - Error executing trade for SANDUSDT: float division by zero
+2024-12-05 21:41:04,897 - strategies.scalping - ERROR - Error executing trade for TRXUSDT: float division by zero
+2024-12-05 21:41:24,337 - strategies.scalping - ERROR - Error executing trade for POLUSDT: float division by zero
+2024-12-05 21:41:46,263 - strategies.scalping - ERROR - Error executing trade for SANDUSDT: float division by zero
+2024-12-05 21:44:56,624 - strategies.scalping - ERROR - Error executing trade for TRXUSDT: float division by zero
+2024-12-05 21:45:23,745 - strategies.scalping - ERROR - Error executing trade for FDUSDUSDT: float division by zero
+2024-12-05 21:45:29,831 - strategies.scalping - ERROR - Error executing trade for POLUSDT: float division by zero
+2024-12-05 21:45:51,614 - strategies.scalping - ERROR - Error executing trade for SANDUSDT: float division by zero
+2024-12-05 21:48:47,534 - strategies.scalping - ERROR - Error executing trade for TRXUSDT: float division by zero
+2024-12-05 21:49:19,473 - strategies.scalping - ERROR - Error executing trade for FDUSDUSDT: float division by zero
+2024-12-05 21:49:43,934 - strategies.scalping - ERROR - Error executing trade for SANDUSDT: float division by zero
+2024-12-05 21:52:29,720 - strategies.scalping - ERROR - Error executing trade for TRXUSDT: float division by zero
+2024-12-05 21:53:01,321 - strategies.scalping - ERROR - Error executing trade for FDUSDUSDT: float division by zero
+2024-12-05 21:53:07,506 - strategies.scalping - ERROR - Error executing trade for POLUSDT: float division by zero
+2024-12-05 21:53:28,864 - strategies.scalping - ERROR - Error executing trade for SANDUSDT: float division by zero
+2024-12-05 21:56:36,844 - strategies.scalping - ERROR - Error executing trade for TRXUSDT: float division by zero
+2024-12-05 21:57:07,524 - strategies.scalping - ERROR - Error executing trade for HBARUSDT: float division by zero
+2024-12-05 21:57:13,578 - strategies.scalping - ERROR - Error executing trade for FDUSDUSDT: float division by zero
+2024-12-05 21:57:19,730 - strategies.scalping - ERROR - Error executing trade for POLUSDT: float division by zero
+2024-12-05 21:57:43,671 - strategies.scalping - ERROR - Error executing trade for SANDUSDT: float division by zero
+2024-12-05 22:00:55,297 - strategies.scalping - ERROR - Error executing trade for TRXUSDT: float division by zero
+2024-12-05 22:01:29,642 - strategies.scalping - ERROR - Error executing trade for FDUSDUSDT: float division by zero
+2024-12-05 22:01:37,478 - strategies.scalping - ERROR - Error executing trade for POLUSDT: float division by zero
+2024-12-05 22:02:05,211 - strategies.scalping - ERROR - Error executing trade for SANDUSDT: float division by zero
+2024-12-05 22:04:56,306 - strategies.scalping - ERROR - Error executing trade for TRXUSDT: float division by zero
+2024-12-05 22:05:23,645 - strategies.scalping - ERROR - Error executing trade for FDUSDUSDT: float division by zero
+2024-12-05 22:05:29,683 - strategies.scalping - ERROR - Error executing trade for POLUSDT: float division by zero
+2024-12-05 22:08:41,573 - strategies.scalping - ERROR - Error executing trade for TRXUSDT: float division by zero
+2024-12-05 22:09:11,609 - strategies.scalping - ERROR - Error executing trade for HBARUSDT: float division by zero
+2024-12-05 22:09:17,706 - strategies.scalping - ERROR - Error executing trade for FDUSDUSDT: float division by zero
+2024-12-05 22:09:24,372 - strategies.scalping - ERROR - Error executing trade for POLUSDT: float division by zero
+2024-12-05 22:09:46,285 - strategies.scalping - ERROR - Error executing trade for SANDUSDT: float division by zero
+2024-12-05 22:12:23,373 - strategies.scalping - ERROR - Error executing trade for TRXUSDT: float division by zero
+2024-12-05 22:12:49,270 - strategies.scalping - ERROR - Error executing trade for HBARUSDT: float division by zero
+2024-12-05 22:12:55,714 - strategies.scalping - ERROR - Error executing trade for FDUSDUSDT: float division by zero
+2024-12-05 22:13:02,504 - strategies.scalping - ERROR - Error executing trade for POLUSDT: float division by zero
+2024-12-05 22:13:19,277 - strategies.scalping - ERROR - Error executing trade for SANDUSDT: float division by zero
+2024-12-05 22:15:47,552 - strategies.scalping - ERROR - Error executing trade for TRXUSDT: float division by zero
+2024-12-05 22:16:17,646 - strategies.scalping - ERROR - Error executing trade for HBARUSDT: float division by zero
+2024-12-05 22:16:23,777 - strategies.scalping - ERROR - Error executing trade for FDUSDUSDT: float division by zero
+2024-12-05 22:16:29,549 - strategies.scalping - ERROR - Error executing trade for POLUSDT: float division by zero
+2024-12-05 22:16:51,849 - strategies.scalping - ERROR - Error executing trade for SANDUSDT: float division by zero
+2024-12-05 22:19:57,770 - strategies.scalping - ERROR - Error executing trade for FDUSDUSDT: float division by zero
+2024-12-05 22:20:04,511 - strategies.scalping - ERROR - Error executing trade for POLUSDT: float division by zero
+2024-12-05 22:20:27,482 - strategies.scalping - ERROR - Error executing trade for SANDUSDT: float division by zero
+2024-12-05 22:23:32,678 - strategies.scalping - ERROR - Error executing trade for TRXUSDT: float division by zero
+2024-12-05 22:24:01,261 - strategies.scalping - ERROR - Error executing trade for FDUSDUSDT: float division by zero
+2024-12-05 22:24:07,658 - strategies.scalping - ERROR - Error executing trade for POLUSDT: float division by zero
+2024-12-05 22:24:23,524 - strategies.scalping - ERROR - Error executing trade for SANDUSDT: float division by zero
+2024-12-05 22:27:19,790 - strategies.scalping - ERROR - Error executing trade for TRXUSDT: float division by zero
+2024-12-05 22:27:44,425 - strategies.scalping - ERROR - Error executing trade for HBARUSDT: float division by zero
+2024-12-05 22:27:50,397 - strategies.scalping - ERROR - Error executing trade for FDUSDUSDT: float division by zero
+2024-12-05 22:31:07,429 - strategies.scalping - ERROR - Error executing trade for TRXUSDT: float division by zero
+2024-12-05 22:31:37,681 - strategies.scalping - ERROR - Error executing trade for HBARUSDT: float division by zero
+2024-12-05 22:31:43,325 - strategies.scalping - ERROR - Error executing trade for FDUSDUSDT: float division by zero
+2024-12-05 22:40:27,509 - exchange.binance_client - ERROR - Max retries reached for get_symbol_ticker: APIError(code=-1121): Invalid symbol.
+2024-12-05 22:40:27,512 - exchange.binance_client - ERROR - Error getting total balance in USDT: APIError(code=-1121): Invalid symbol.
+2024-12-05 22:40:27,514 - __main__ - ERROR - Error getting account balance: object float can't be used in 'await' expression
+2024-12-05 22:40:30,105 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 22:40:31,503 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 22:40:32,935 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 22:40:32,938 - exchange.binance_client - ERROR - Max retries reached for create_order: 'step_size'
+2024-12-05 22:40:32,940 - exchange.binance_client - ERROR - Unexpected error creating market order: 'step_size'
+2024-12-05 22:40:36,929 - exchange.binance_client - ERROR - Max retries reached for get_symbol_ticker: APIError(code=-1121): Invalid symbol.
+2024-12-05 22:40:36,932 - exchange.binance_client - ERROR - Unexpected error converting TRY to USDT: APIError(code=-1121): Invalid symbol.
+2024-12-05 22:40:40,207 - exchange.binance_client - ERROR - Max retries reached for get_symbol_ticker: APIError(code=-1121): Invalid symbol.
+2024-12-05 22:40:40,209 - exchange.binance_client - ERROR - Unexpected error converting ZAR to USDT: APIError(code=-1121): Invalid symbol.
+2024-12-05 22:40:43,381 - exchange.binance_client - ERROR - Max retries reached for get_symbol_ticker: APIError(code=-1121): Invalid symbol.
+2024-12-05 22:40:43,384 - exchange.binance_client - ERROR - Unexpected error converting IDRT to USDT: APIError(code=-1121): Invalid symbol.
+2024-12-05 22:40:47,887 - exchange.binance_client - ERROR - Max retries reached for get_symbol_ticker: APIError(code=-1121): Invalid symbol.
+2024-12-05 22:40:47,889 - exchange.binance_client - ERROR - Unexpected error converting UAH to USDT: APIError(code=-1121): Invalid symbol.
+2024-12-05 22:40:52,904 - exchange.binance_client - ERROR - Max retries reached for get_symbol_ticker: APIError(code=-1121): Invalid symbol.
+2024-12-05 22:40:52,907 - exchange.binance_client - ERROR - Unexpected error converting DAI to USDT: APIError(code=-1121): Invalid symbol.
+2024-12-05 22:40:56,792 - exchange.binance_client - ERROR - Max retries reached for get_symbol_ticker: APIError(code=-1121): Invalid symbol.
+2024-12-05 22:40:56,794 - exchange.binance_client - ERROR - Unexpected error converting BRL to USDT: APIError(code=-1121): Invalid symbol.
+2024-12-05 22:40:59,568 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 22:41:00,993 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 22:41:02,425 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 22:41:02,428 - exchange.binance_client - ERROR - Max retries reached for create_order: 'step_size'
+2024-12-05 22:41:02,430 - exchange.binance_client - ERROR - Unexpected error creating market order: 'step_size'
+2024-12-05 22:41:05,908 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 22:41:07,947 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 22:41:10,107 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 22:41:10,109 - exchange.binance_client - ERROR - Max retries reached for create_order: 'step_size'
+2024-12-05 22:41:10,111 - exchange.binance_client - ERROR - Unexpected error creating market order: 'step_size'
+2024-12-05 22:41:12,870 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 22:41:15,021 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 22:41:16,384 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 22:41:16,387 - exchange.binance_client - ERROR - Max retries reached for create_order: 'step_size'
+2024-12-05 22:41:16,389 - exchange.binance_client - ERROR - Unexpected error creating market order: 'step_size'
+2024-12-05 22:41:20,757 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 22:41:22,117 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 22:41:24,238 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 22:41:24,240 - exchange.binance_client - ERROR - Max retries reached for create_order: 'step_size'
+2024-12-05 22:41:24,243 - exchange.binance_client - ERROR - Unexpected error creating market order: 'step_size'
+2024-12-05 22:41:26,900 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 22:41:29,048 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 22:41:31,102 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 22:41:31,105 - exchange.binance_client - ERROR - Max retries reached for create_order: 'step_size'
+2024-12-05 22:41:31,109 - exchange.binance_client - ERROR - Unexpected error creating market order: 'step_size'
+2024-12-05 22:41:35,194 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 22:41:37,343 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 22:41:38,718 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 22:41:38,719 - exchange.binance_client - ERROR - Max retries reached for create_order: 'step_size'
+2024-12-05 22:41:38,720 - exchange.binance_client - ERROR - Unexpected error creating market order: 'step_size'
+2024-12-05 22:41:42,669 - exchange.binance_client - ERROR - Max retries reached for get_symbol_ticker: APIError(code=-1121): Invalid symbol.
+2024-12-05 22:41:42,672 - exchange.binance_client - ERROR - Unexpected error converting PLN to USDT: APIError(code=-1121): Invalid symbol.
+2024-12-05 22:41:46,764 - exchange.binance_client - ERROR - Max retries reached for get_symbol_ticker: APIError(code=-1121): Invalid symbol.
+2024-12-05 22:41:46,769 - exchange.binance_client - ERROR - Unexpected error converting RON to USDT: APIError(code=-1121): Invalid symbol.
+2024-12-05 22:41:51,886 - exchange.binance_client - ERROR - Max retries reached for get_symbol_ticker: APIError(code=-1121): Invalid symbol.
+2024-12-05 22:41:51,894 - exchange.binance_client - ERROR - Unexpected error converting ARS to USDT: APIError(code=-1121): Invalid symbol.
+2024-12-05 22:41:55,238 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 22:41:56,614 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 22:41:58,861 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 22:41:58,864 - exchange.binance_client - ERROR - Max retries reached for create_order: 'step_size'
+2024-12-05 22:41:58,867 - exchange.binance_client - ERROR - Unexpected error creating market order: 'step_size'
+2024-12-05 22:42:01,612 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 22:42:03,046 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 22:42:05,199 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 22:42:05,203 - exchange.binance_client - ERROR - Max retries reached for create_order: 'step_size'
+2024-12-05 22:42:05,207 - exchange.binance_client - ERROR - Unexpected error creating market order: 'step_size'
+2024-12-05 22:42:09,090 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 22:42:11,237 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 22:42:12,612 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 22:42:12,616 - exchange.binance_client - ERROR - Max retries reached for create_order: 'step_size'
+2024-12-05 22:42:12,622 - exchange.binance_client - ERROR - Unexpected error creating market order: 'step_size'
+2024-12-05 22:42:15,536 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 22:42:17,690 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 22:42:19,839 - exchange.binance_client - ERROR - Error creating order: 'step_size'
+2024-12-05 22:42:19,844 - exchange.binance_client - ERROR - Max retries reached for create_order: 'step_size'
+2024-12-05 22:42:19,847 - exchange.binance_client - ERROR - Unexpected error creating market order: 'step_size'
+2024-12-05 22:42:24,713 - exchange.binance_client - ERROR - Max retries reached for get_symbol_ticker: APIError(code=-1121): Invalid symbol.
+2024-12-05 22:42:24,717 - exchange.binance_client - ERROR - Unexpected error converting JPY to USDT: APIError(code=-1121): Invalid symbol.
+2024-12-05 22:42:29,260 - exchange.binance_client - ERROR - Max retries reached for get_symbol_ticker: APIError(code=-1121): Invalid symbol.
+2024-12-05 22:42:29,266 - exchange.binance_client - ERROR - Unexpected error converting MXN to USDT: APIError(code=-1121): Invalid symbol.
+2024-12-05 22:42:32,703 - exchange.binance_client - ERROR - Max retries reached for get_symbol_ticker: APIError(code=-1121): Invalid symbol.
+2024-12-05 22:42:32,705 - exchange.binance_client - ERROR - Unexpected error converting CZK to USDT: APIError(code=-1121): Invalid symbol.
+2024-12-05 22:42:37,348 - exchange.binance_client - ERROR - Max retries reached for get_symbol_ticker: APIError(code=-1121): Invalid symbol.
+2024-12-05 22:42:37,350 - exchange.binance_client - ERROR - Unexpected error converting COP to USDT: APIError(code=-1121): Invalid symbol.
+2024-12-05 22:47:17,446 - strategies.scalping - ERROR - Error executing trade for HBARUSDT: float division by zero
+2024-12-05 22:47:28,221 - strategies.scalping - ERROR - Error executing trade for POLUSDT: float division by zero
+2024-12-05 22:47:33,332 - strategies.scalping - ERROR - Error executing trade for FDUSDUSDT: float division by zero
+2024-12-05 22:47:44,076 - strategies.scalping - ERROR - Error executing trade for SANDUSDT: float division by zero
+2024-12-05 22:50:18,831 - strategies.scalping - ERROR - Error executing trade for HBARUSDT: float division by zero
+2024-12-05 22:50:23,723 - strategies.scalping - ERROR - Error executing trade for POLUSDT: float division by zero
+2024-12-05 22:50:34,412 - strategies.scalping - ERROR - Error executing trade for FDUSDUSDT: float division by zero
+2024-12-05 22:50:45,249 - strategies.scalping - ERROR - Error executing trade for SANDUSDT: float division by zero
+2024-12-05 22:53:38,177 - strategies.scalping - ERROR - Error executing trade for HBARUSDT: float division by zero
+2024-12-05 22:53:48,861 - strategies.scalping - ERROR - Error executing trade for POLUSDT: float division by zero
+2024-12-05 22:53:53,985 - strategies.scalping - ERROR - Error executing trade for FDUSDUSDT: float division by zero
+2024-12-05 22:56:45,503 - strategies.scalping - ERROR - Error executing trade for HBARUSDT: float division by zero
+2024-12-05 22:56:56,526 - strategies.scalping - ERROR - Error executing trade for POLUSDT: float division by zero
+2024-12-05 22:57:01,461 - strategies.scalping - ERROR - Error executing trade for FDUSDUSDT: float division by zero
+2024-12-05 22:57:08,729 - strategies.scalping - ERROR - Error executing trade for SANDUSDT: float division by zero
+2024-12-05 22:59:57,790 - strategies.scalping - ERROR - Error executing trade for HBARUSDT: float division by zero
+2024-12-05 23:00:02,748 - strategies.scalping - ERROR - Error executing trade for POLUSDT: float division by zero
+2024-12-05 23:00:21,479 - strategies.scalping - ERROR - Error executing trade for SANDUSDT: float division by zero
+2024-12-05 23:02:52,178 - strategies.scalping - ERROR - Error executing trade for TRXUSDT: float division by zero
+2024-12-05 23:03:16,926 - strategies.scalping - ERROR - Error executing trade for POLUSDT: float division by zero
+2024-12-05 23:03:27,667 - strategies.scalping - ERROR - Error executing trade for FDUSDUSDT: float division by zero
+2024-12-05 23:03:38,269 - strategies.scalping - ERROR - Error executing trade for SANDUSDT: float division by zero
+2024-12-05 23:06:19,663 - strategies.scalping - ERROR - Error executing trade for POLUSDT: float division by zero
+2024-12-05 23:06:30,349 - strategies.scalping - ERROR - Error executing trade for FDUSDUSDT: float division by zero
